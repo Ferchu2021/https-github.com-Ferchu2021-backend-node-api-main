@@ -44,14 +44,16 @@ app.use((err, req, res, next) => {
 });
 
 // Conexión a MongoDB y arranque del servidor
+console.log('Intentando conectar a MongoDB...');
 mongoose.connect(process.env.MONGO_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 })
 .then(() => {
+  console.log('✅ Conexión exitosa a MongoDB');
   const port = process.env.PORT || 3001;
-  app.listen(port, () => console.log(`Servidor escuchando en puerto ${port}`));
+  app.listen(port, () => console.log(`🚀 Servidor escuchando en puerto ${port}`));
 })
 .catch((err) => {
-  console.error("Error de conexión a MongoDB:", err.message);
+  console.error("❌ Error de conexión a MongoDB:", err.message);
 });
