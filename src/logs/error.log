@@ -1,0 +1,88 @@
+{
+  method: 'POST',
+  url: '/register',
+  status: 500,
+  duration: '190ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-07-31 01:38:55'
+}
+{
+  method: 'POST',
+  url: '/login',
+  status: 500,
+  duration: '175ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-07-31 01:38:55'
+}
+{
+  method: 'GET',
+  url: '/verify',
+  status: 401,
+  duration: '4ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-07-31 01:38:55'
+}
+{
+  method: 'GET',
+  url: '/perfil/me',
+  status: 401,
+  duration: '3ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-07-31 01:38:56'
+}
+{
+  method: 'GET',
+  url: '/',
+  status: 500,
+  duration: '179ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-07-31 01:38:56'
+}
+{
+  method: 'GET',
+  url: '/?page=1&limit=5',
+  status: 500,
+  duration: '176ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-07-31 01:38:56'
+}
+{
+  method: 'PUT',
+  url: '/perfil/me',
+  status: 401,
+  duration: '2ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-07-31 01:38:56'
+}
+{
+  method: 'POST',
+  url: '/refresh',
+  status: 401,
+  duration: '4ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-07-31 01:38:56'
+}

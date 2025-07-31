@@ -3,9 +3,18 @@
   "version": "1.0.0",
   "main": "src/app.js",
   "scripts": {
-    "start": "node src/app.js"
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js",
+    "demo": "node demo_api.js",
+    "test": "node test_api.js",
+    "test-demo": "node test_demo.js",
+    "create-admin": "node create_admin.js",
+    "setup-env": "node setup_env.js",
+    "logs": "tail -f src/logs/combined.log",
+    "logs-error": "tail -f src/logs/error.log"
   },
   "dependencies": {
+    "description": "0.0.4",
     "bcrypt": "^5.1.1",
     "cors": "^2.8.5",
     "dotenv": "^16.6.1",
@@ -15,6 +24,10 @@
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^7.8.7",
     "morgan": "^1.10.1",
-    "nodemon": "^3.1.10"
+    "nodemon": "^3.1.10",
+    "typescript": "^5.8.3"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3"
   }
 }

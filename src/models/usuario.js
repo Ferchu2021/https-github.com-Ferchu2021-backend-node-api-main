@@ -21,12 +21,29 @@ const usuarioSchema = new mongoose.Schema({
 usuarioSchema.pre('save', async function(next) {
   if (!this.isModified('password')) return next();
   try {
-    const salt = await bcrypt.genSalt(10);
+    const salt = await bcrypt.genSalt(12);
     this.password = await bcrypt.hash(this.password, salt);
     next();
   } catch (err) {
     next(err);
   }
 });
+
+// Método para comparar contraseñas
+usuarioSchema.methods.comparePassword = async function(candidatePassword) {
+  return await bcrypt.compare(candidatePassword, this.password);
+};
+
+// Método para obtener datos públicos del usuario
+usuarioSchema.methods.toPublicJSON = function() {
+  const userObject = this.toObject();
+  delete userObject.password;
+  return userObject;
+};
+
+// Método estático para buscar por email
+usuarioSchema.statics.findByEmail = function(email) {
+  return this.findOne({ email: email.toLowerCase() });
+};
 
 module.exports = mongoose.model('Usuario', usuarioSchema);

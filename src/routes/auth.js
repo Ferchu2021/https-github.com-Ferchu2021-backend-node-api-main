@@ -1,8 +1,15 @@
 const express = require("express");
 const router = express.Router();
 const authController = require("../controllers/authController");
+const { validateLogin, validateUser } = require("../middleware/validate");
+const { authMiddleware } = require("../middleware/authMiddleware");
 
-router.post("/login", authController.login);
-router.post("/register", authController.register);
+// Rutas públicas
+router.post("/login", validateLogin, authController.login);
+router.post("/register", validateUser, authController.register);
+
+// Rutas protegidas
+router.get("/verify", authMiddleware, authController.verifyToken);
+router.post("/refresh", authMiddleware, authController.refreshToken);
 
 module.exports = router;

@@ -1,0 +1,197 @@
+{
+  port: 3001,
+  environment: 'development',
+  mongoUri: 'Configurado',
+  level: 'info',
+  message: 'Servidor iniciado correctamente',
+  timestamp: '2025-07-31 01:29:00'
+}
+{
+  message: 'SIGINT recibido, cerrando servidor...',
+  level: 'info',
+  timestamp: '2025-07-31 01:31:46'
+}
+{
+  port: 3001,
+  environment: 'development',
+  mongoUri: 'Configurado',
+  level: 'info',
+  message: 'Servidor iniciado correctamente',
+  timestamp: '2025-07-31 01:35:51'
+}
+{
+  method: 'GET',
+  url: '/health',
+  status: 200,
+  duration: '6ms',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT; Windows NT 10.0; es-AR) WindowsPowerShell/5.1.22621.5624',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-07-31 01:36:08'
+}
+{
+  message: '::1 - - [31/Jul/2025:04:36:08 +0000] "GET /health HTTP/1.1" 200 213 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; es-AR) WindowsPowerShell/5.1.22621.5624"',
+  level: 'info',
+  timestamp: '2025-07-31 01:36:08'
+}
+{
+  method: 'GET',
+  url: '/health',
+  status: 200,
+  duration: '3ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-07-31 01:38:55'
+}
+{
+  message: '::1 - - [31/Jul/2025:04:38:55 +0000] "GET /health HTTP/1.1" 200 214 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-07-31 01:38:55'
+}
+{
+  method: 'GET',
+  url: '/',
+  status: 200,
+  duration: '2ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-07-31 01:38:55'
+}
+{
+  message: '::1 - - [31/Jul/2025:04:38:55 +0000] "GET / HTTP/1.1" 200 196 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-07-31 01:38:55'
+}
+{
+  method: 'POST',
+  url: '/register',
+  status: 500,
+  duration: '190ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-07-31 01:38:55'
+}
+{
+  message: '::1 - - [31/Jul/2025:04:38:55 +0000] "POST /api/auth/register HTTP/1.1" 500 38 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-07-31 01:38:55'
+}
+{
+  method: 'POST',
+  url: '/login',
+  status: 500,
+  duration: '175ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-07-31 01:38:55'
+}
+{
+  message: '::1 - - [31/Jul/2025:04:38:55 +0000] "POST /api/auth/login HTTP/1.1" 500 38 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-07-31 01:38:55'
+}
+{
+  method: 'GET',
+  url: '/verify',
+  status: 401,
+  duration: '4ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-07-31 01:38:55'
+}
+{
+  message: '::1 - - [31/Jul/2025:04:38:55 +0000] "GET /api/auth/verify HTTP/1.1" 401 52 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-07-31 01:38:55'
+}
+{
+  method: 'GET',
+  url: '/perfil/me',
+  status: 401,
+  duration: '3ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-07-31 01:38:56'
+}
+{
+  message: '::1 - - [31/Jul/2025:04:38:56 +0000] "GET /api/usuarios/perfil/me HTTP/1.1" 401 52 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-07-31 01:38:56'
+}
+{
+  method: 'GET',
+  url: '/',
+  status: 500,
+  duration: '179ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-07-31 01:38:56'
+}
+{
+  message: '::1 - - [31/Jul/2025:04:38:56 +0000] "GET /api/usuarios HTTP/1.1" 500 105 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-07-31 01:38:56'
+}
+{
+  method: 'GET',
+  url: '/?page=1&limit=5',
+  status: 500,
+  duration: '176ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-07-31 01:38:56'
+}
+{
+  message: '::1 - - [31/Jul/2025:04:38:56 +0000] "GET /api/usuarios?page=1&limit=5 HTTP/1.1" 500 105 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-07-31 01:38:56'
+}
+{
+  method: 'PUT',
+  url: '/perfil/me',
+  status: 401,
+  duration: '2ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-07-31 01:38:56'
+}
+{
+  message: '::1 - - [31/Jul/2025:04:38:56 +0000] "PUT /api/usuarios/perfil/me HTTP/1.1" 401 52 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-07-31 01:38:56'
+}
+{
+  method: 'POST',
+  url: '/refresh',
+  status: 401,
+  duration: '4ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-07-31 01:38:56'
+}
+{
+  message: '::1 - - [31/Jul/2025:04:38:56 +0000] "POST /api/auth/refresh HTTP/1.1" 401 52 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-07-31 01:38:56'
+}
