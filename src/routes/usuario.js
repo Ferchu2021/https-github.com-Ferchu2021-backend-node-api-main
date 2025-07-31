@@ -1,3 +1,13 @@
+import {router} from 'express';
+const router = routes();
+
+router.get('/usuario', (req, res)=>{ 
+  res.json({usuario: 'usuario'});
+});
+
+export default router;
+
+
 const express = require('express');
 const router = express.Router();
 const Usuario = require('../models/usuario'); // La ruta debe coincidir (en minúsculas) y el modelo debe existir
