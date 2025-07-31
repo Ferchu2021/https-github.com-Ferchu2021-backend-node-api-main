@@ -1,7 +1,20 @@
 import {router} from 'express';
-const router = routes();
-router.get('/usuario', (req, res)=>{
-    res.json({usuario: 'usuario'})
+import usuario from './usuario';
+import productos from './productos';
+import categoria from './categoria';
+import venta from './venta';    
+import router from './usuario';
+
+
+const router = router();
+
+router.use('/usuario', usuario);    //localhost:3000/usuario
+router.use('/productos', productos); //localhost:3000/productos
+router.use('/categoria', categoria);
+router.use('/venta', venta);
+
+router("/usuario", (req, res)=>{
+    res.json({usuario: 'Usuario'})
 });
 
 router("/producto", (req, res)=>{
@@ -13,4 +26,8 @@ router("/categoria", (req, res)=>{
 });
 
 router("/venta", (req, res)=>{
+    res.json({venta: 'Venta'})
+});
+
+
 export default router;
