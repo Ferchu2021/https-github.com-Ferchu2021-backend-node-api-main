@@ -10,6 +10,7 @@
     "test-demo": "node test_demo.js",
     "create-admin": "node create_admin.js",
     "setup-env": "node setup_env.js",
+    "setup-mongodb": "node setup_mongodb.js",
     "logs": "tail -f src/logs/combined.log",
     "logs-error": "tail -f src/logs/error.log"
   },
