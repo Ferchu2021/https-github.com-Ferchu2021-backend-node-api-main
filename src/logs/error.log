@@ -107,3 +107,24 @@
   timestamp: '2025-07-31 01:50:05',
   [Symbol(errorLabels)]: Set(2) { 'HandshakeError', 'ResetPool' }
 }
+{
+  ok: 0,
+  code: 8000,
+  codeName: 'AtlasError',
+  connectionGeneration: 0,
+  level: 'error',
+  message: 'Error conectando a MongoDB: bad auth : Authentication failed.',
+  stack: 'MongoServerError: bad auth : Authentication failed.\n' +
+    '    at Connection.onMessage (C:\\Users\\Administrator\\Desktop\\MCGA\\https-github.com-Ferchu2021-backend-node-api-main\\https-github.com-Ferchu2021-backend-node-api-main\\node_modules\\mongodb\\lib\\cmap\\connection.js:202:26)\n' +
+    '    at MessageStream.<anonymous> (C:\\Users\\Administrator\\Desktop\\MCGA\\https-github.com-Ferchu2021-backend-node-api-main\\https-github.com-Ferchu2021-backend-node-api-main\\node_modules\\mongodb\\lib\\cmap\\connection.js:61:60)\n' +
+    '    at MessageStream.emit (node:events:507:28)\n' +
+    '    at processIncomingData (C:\\Users\\Administrator\\Desktop\\MCGA\\https-github.com-Ferchu2021-backend-node-api-main\\https-github.com-Ferchu2021-backend-node-api-main\\node_modules\\mongodb\\lib\\cmap\\message_stream.js:124:16)\n' +
+    '    at MessageStream._write (C:\\Users\\Administrator\\Desktop\\MCGA\\https-github.com-Ferchu2021-backend-node-api-main\\https-github.com-Ferchu2021-backend-node-api-main\\node_modules\\mongodb\\lib\\cmap\\message_stream.js:33:9)\n' +
+    '    at writeOrBuffer (node:internal/streams/writable:570:12)\n' +
+    '    at _write (node:internal/streams/writable:499:10)\n' +
+    '    at Writable.write (node:internal/streams/writable:508:10)\n' +
+    '    at TLSSocket.ondata (node:internal/streams/readable:1007:22)\n' +
+    '    at TLSSocket.emit (node:events:507:28)',
+  timestamp: '2025-07-31 21:34:27',
+  [Symbol(errorLabels)]: Set(2) { 'HandshakeError', 'ResetPool' }
+}

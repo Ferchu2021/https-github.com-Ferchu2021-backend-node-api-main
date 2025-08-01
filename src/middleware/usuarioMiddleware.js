@@ -9,6 +9,4 @@ export const validarUsuarioNoExiste = (req, res, next) => {
   }
   next();
 };
-  }
-  next();
-};
+
