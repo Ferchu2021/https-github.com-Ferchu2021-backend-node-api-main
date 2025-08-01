@@ -15,18 +15,21 @@
     "logs-error": "tail -f src/logs/error.log"
   },
   "dependencies": {
+    "axios": "^1.11.0",
     "bcrypt": "^5.1.1",
     "cors": "^2.8.5",
     "description": "0.0.4",
     "dotenv": "^16.6.1",
     "express": "^4.21.2",
+    "express-rate-limit": "^8.0.1",
     "helmet": "^8.1.0",
     "joi": "^17.13.3",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^7.8.7",
     "morgan": "^1.10.1",
     "nodemon": "^3.1.10",
-    "typescript": "^5.8.3"
+    "typescript": "^5.8.3",
+    "winston": "^3.17.0"
   },
   "devDependencies": {
     "typescript": "^5.8.3"
