@@ -261,3 +261,19 @@
   level: 'info',
   timestamp: '2025-08-01 00:37:17'
 }
+{
+  method: 'GET',
+  url: '/producto',
+  status: 404,
+  duration: '37ms',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-08-02 01:07:27'
+}
+{
+  message: '::1 - - [02/Aug/2025:04:07:27 +0000] "GET /producto HTTP/1.1" 404 64 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"',
+  level: 'info',
+  timestamp: '2025-08-02 01:07:27'
+}

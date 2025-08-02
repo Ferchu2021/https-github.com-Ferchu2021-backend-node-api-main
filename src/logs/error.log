@@ -128,3 +128,14 @@
   timestamp: '2025-07-31 21:34:27',
   [Symbol(errorLabels)]: Set(2) { 'HandshakeError', 'ResetPool' }
 }
+{
+  method: 'GET',
+  url: '/producto',
+  status: 404,
+  duration: '37ms',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-08-02 01:07:27'
+}
