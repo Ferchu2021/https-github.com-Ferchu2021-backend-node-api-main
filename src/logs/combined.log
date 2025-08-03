@@ -2071,3 +2071,195 @@
   level: 'info',
   timestamp: '2025-08-03 12:13:27'
 }
+{
+  port: 3001,
+  environment: 'development',
+  mongoUri: 'Configurado',
+  level: 'info',
+  message: 'Servidor iniciado correctamente',
+  timestamp: '2025-08-03 12:28:22'
+}
+{
+  method: 'GET',
+  url: '/health',
+  status: 200,
+  duration: '10ms',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT; Windows NT 10.0; es-AR) WindowsPowerShell/5.1.22621.5624',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 12:28:32'
+}
+{
+  message: '::1 - - [03/Aug/2025:15:28:32 +0000] "GET /health HTTP/1.1" 200 213 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; es-AR) WindowsPowerShell/5.1.22621.5624"',
+  level: 'info',
+  timestamp: '2025-08-03 12:28:32'
+}
+{
+  method: 'GET',
+  url: '/api/firebase/login',
+  status: 404,
+  duration: '4ms',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT; Windows NT 10.0; es-AR) WindowsPowerShell/5.1.22621.5624',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-08-03 12:28:41'
+}
+{
+  message: '::1 - - [03/Aug/2025:15:28:41 +0000] "GET /api/firebase/login HTTP/1.1" 404 74 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; es-AR) WindowsPowerShell/5.1.22621.5624"',
+  level: 'info',
+  timestamp: '2025-08-03 12:28:41'
+}
+{
+  method: 'POST',
+  url: '/auth/login',
+  status: 200,
+  duration: '2ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 12:36:43'
+}
+{
+  message: '::1 - - [03/Aug/2025:15:36:43 +0000] "POST /api/firebase/auth/login HTTP/1.1" 200 211 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 12:36:43'
+}
+{
+  method: 'POST',
+  url: '/auth/register',
+  status: 400,
+  duration: '599ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-08-03 12:36:44'
+}
+{
+  message: '::1 - - [03/Aug/2025:15:36:44 +0000] "POST /api/firebase/auth/register HTTP/1.1" 400 134 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 12:36:44'
+}
+{
+  port: 3001,
+  environment: 'development',
+  mongoUri: 'Configurado',
+  level: 'info',
+  message: 'Servidor iniciado correctamente',
+  timestamp: '2025-08-03 12:38:23'
+}
+{
+  method: 'POST',
+  url: '/auth/login',
+  status: 200,
+  duration: '11ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 12:38:52'
+}
+{
+  message: '::1 - - [03/Aug/2025:15:38:52 +0000] "POST /api/firebase/auth/login HTTP/1.1" 200 211 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 12:38:52'
+}
+{
+  method: 'POST',
+  url: '/auth/register',
+  status: 400,
+  duration: '472ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-08-03 12:38:53'
+}
+{
+  message: '::1 - - [03/Aug/2025:15:38:53 +0000] "POST /api/firebase/auth/register HTTP/1.1" 400 134 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 12:38:53'
+}
+{
+  method: 'GET',
+  url: '/health',
+  status: 200,
+  duration: '2ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 12:52:57'
+}
+{
+  message: '::1 - - [03/Aug/2025:15:52:57 +0000] "GET /health HTTP/1.1" 200 213 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 12:52:57'
+}
+{
+  method: 'POST',
+  url: '/auth/login',
+  status: 200,
+  duration: '2ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 12:52:57'
+}
+{
+  message: '::1 - - [03/Aug/2025:15:52:57 +0000] "POST /api/firebase/auth/login HTTP/1.1" 200 211 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 12:52:57'
+}
+{
+  method: 'POST',
+  url: '/auth/register',
+  status: 400,
+  duration: '319ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-08-03 12:52:57'
+}
+{
+  message: '::1 - - [03/Aug/2025:15:52:57 +0000] "POST /api/firebase/auth/register HTTP/1.1" 400 134 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 12:52:57'
+}
+{
+  method: 'GET',
+  url: '/productos/',
+  status: 404,
+  duration: '2ms',
+  ip: '::1',
+  userAgent: 'PostmanRuntime/7.45.0',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-08-03 12:55:20'
+}
+{
+  message: '::1 - - [03/Aug/2025:15:55:20 +0000] "GET /productos/ HTTP/1.1" 404 66 "-" "PostmanRuntime/7.45.0"',
+  level: 'info',
+  timestamp: '2025-08-03 12:55:20'
+}
+{
+  method: 'GET',
+  url: '/usuario/6820a525db222d2655234564',
+  status: 404,
+  duration: '2ms',
+  ip: '::1',
+  userAgent: 'PostmanRuntime/7.45.0',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-08-03 13:04:53'
+}
+{
+  message: '::1 - - [03/Aug/2025:16:04:53 +0000] "GET /usuario/6820a525db222d2655234564 HTTP/1.1" 404 88 "-" "PostmanRuntime/7.45.0"',
+  level: 'info',
+  timestamp: '2025-08-03 13:04:53'
+}
