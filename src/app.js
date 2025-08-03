@@ -14,6 +14,7 @@ const { logRequest, logError, logger } = require('./utils/logger');
 const authRoutes = require("./routes/auth");
 const dataRoutes = require("./routes/data");
 const usuariosRoutes = require('./routes/usuario');
+const firebaseRoutes = require('./routes/firebase');
 
 const app = express();
 
@@ -57,6 +58,7 @@ app.use('/api/auth', authLimiter);
 app.use("/api/auth", authRoutes);
 app.use("/api/data", dataRoutes);
 app.use('/api/usuarios', usuariosRoutes);
+app.use('/api/firebase', firebaseRoutes);
 
 // Ruta de prueba
 app.get('/', (req, res) => {
@@ -67,7 +69,8 @@ app.get('/', (req, res) => {
     endpoints: {
       auth: '/api/auth',
       usuarios: '/api/usuarios',
-      data: '/api/data'
+      data: '/api/data',
+      firebase: '/api/firebase'
     }
   });
 });

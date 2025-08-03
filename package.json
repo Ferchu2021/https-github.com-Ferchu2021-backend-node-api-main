@@ -11,6 +11,7 @@
     "create-admin": "node create_admin.js",
     "setup-env": "node setup_env.js",
     "setup-mongodb": "node setup_mongodb.js",
+    "setup-firebase": "node setup_firebase.js",
     "logs": "tail -f src/logs/combined.log",
     "logs-error": "tail -f src/logs/error.log"
   },
@@ -23,6 +24,8 @@
     "express": "^4.21.2",
     "express-rate-limit": "^8.0.1",
     "express-validator": "^7.2.1",
+    "firebase": "^12.0.0",
+    "firebase-admin": "^13.4.0",
     "helmet": "^8.1.0",
     "joi": "^17.13.3",
     "jsonwebtoken": "^9.0.2",
