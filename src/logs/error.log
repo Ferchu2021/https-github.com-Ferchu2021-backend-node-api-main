@@ -435,3 +435,156 @@
   message: 'HTTP Request Error',
   timestamp: '2025-08-03 13:04:53'
 }
+{
+  error: "Expected ',' or '}' after property value in JSON at position 55 (line 4 column 3)",
+  stack: "SyntaxError: Expected ',' or '}' after property value in JSON at position 55 (line 4 column 3)\n" +
+    '    at JSON.parse (<anonymous>)\n' +
+    '    at parse (C:\\Users\\Administrator\\Desktop\\MCGA\\https-github.com-Ferchu2021-backend-node-api-main\\https-github.com-Ferchu2021-backend-node-api-main\\node_modules\\body-parser\\lib\\types\\json.js:92:19)\n' +
+    '    at C:\\Users\\Administrator\\Desktop\\MCGA\\https-github.com-Ferchu2021-backend-node-api-main\\https-github.com-Ferchu2021-backend-node-api-main\\node_modules\\body-parser\\lib\\read.js:128:18\n' +
+    '    at AsyncResource.runInAsyncScope (node:async_hooks:214:14)\n' +
+    '    at invokeCallback (C:\\Users\\Administrator\\Desktop\\MCGA\\https-github.com-Ferchu2021-backend-node-api-main\\https-github.com-Ferchu2021-backend-node-api-main\\node_modules\\raw-body\\index.js:238:16)\n' +
+    '    at done (C:\\Users\\Administrator\\Desktop\\MCGA\\https-github.com-Ferchu2021-backend-node-api-main\\https-github.com-Ferchu2021-backend-node-api-main\\node_modules\\raw-body\\index.js:227:7)\n' +
+    '    at IncomingMessage.onEnd (C:\\Users\\Administrator\\Desktop\\MCGA\\https-github.com-Ferchu2021-backend-node-api-main\\https-github.com-Ferchu2021-backend-node-api-main\\node_modules\\raw-body\\index.js:287:7)\n' +
+    '    at IncomingMessage.emit (node:events:507:28)\n' +
+    '    at endReadableNT (node:internal/streams/readable:1696:12)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)',
+  url: '/usuario/',
+  method: 'POST',
+  ip: '::1',
+  userAgent: 'PostmanRuntime/7.45.0',
+  level: 'error',
+  message: 'Application Error',
+  timestamp: '2025-08-03 13:51:20'
+}
+{
+  error: "Expected ',' or '}' after property value in JSON at position 55 (line 4 column 3)",
+  stack: "SyntaxError: Expected ',' or '}' after property value in JSON at position 55 (line 4 column 3)\n" +
+    '    at JSON.parse (<anonymous>)\n' +
+    '    at parse (C:\\Users\\Administrator\\Desktop\\MCGA\\https-github.com-Ferchu2021-backend-node-api-main\\https-github.com-Ferchu2021-backend-node-api-main\\node_modules\\body-parser\\lib\\types\\json.js:92:19)\n' +
+    '    at C:\\Users\\Administrator\\Desktop\\MCGA\\https-github.com-Ferchu2021-backend-node-api-main\\https-github.com-Ferchu2021-backend-node-api-main\\node_modules\\body-parser\\lib\\read.js:128:18\n' +
+    '    at AsyncResource.runInAsyncScope (node:async_hooks:214:14)\n' +
+    '    at invokeCallback (C:\\Users\\Administrator\\Desktop\\MCGA\\https-github.com-Ferchu2021-backend-node-api-main\\https-github.com-Ferchu2021-backend-node-api-main\\node_modules\\raw-body\\index.js:238:16)\n' +
+    '    at done (C:\\Users\\Administrator\\Desktop\\MCGA\\https-github.com-Ferchu2021-backend-node-api-main\\https-github.com-Ferchu2021-backend-node-api-main\\node_modules\\raw-body\\index.js:227:7)\n' +
+    '    at IncomingMessage.onEnd (C:\\Users\\Administrator\\Desktop\\MCGA\\https-github.com-Ferchu2021-backend-node-api-main\\https-github.com-Ferchu2021-backend-node-api-main\\node_modules\\raw-body\\index.js:287:7)\n' +
+    '    at IncomingMessage.emit (node:events:507:28)\n' +
+    '    at endReadableNT (node:internal/streams/readable:1696:12)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)',
+  url: '/usuario/',
+  method: 'POST',
+  level: 'error',
+  message: 'Unhandled Error:',
+  timestamp: '2025-08-03 13:51:20'
+}
+{
+  error: "Expected ',' or '}' after property value in JSON at position 55 (line 4 column 3)",
+  stack: "SyntaxError: Expected ',' or '}' after property value in JSON at position 55 (line 4 column 3)\n" +
+    '    at JSON.parse (<anonymous>)\n' +
+    '    at parse (C:\\Users\\Administrator\\Desktop\\MCGA\\https-github.com-Ferchu2021-backend-node-api-main\\https-github.com-Ferchu2021-backend-node-api-main\\node_modules\\body-parser\\lib\\types\\json.js:92:19)\n' +
+    '    at C:\\Users\\Administrator\\Desktop\\MCGA\\https-github.com-Ferchu2021-backend-node-api-main\\https-github.com-Ferchu2021-backend-node-api-main\\node_modules\\body-parser\\lib\\read.js:128:18\n' +
+    '    at AsyncResource.runInAsyncScope (node:async_hooks:214:14)\n' +
+    '    at invokeCallback (C:\\Users\\Administrator\\Desktop\\MCGA\\https-github.com-Ferchu2021-backend-node-api-main\\https-github.com-Ferchu2021-backend-node-api-main\\node_modules\\raw-body\\index.js:238:16)\n' +
+    '    at done (C:\\Users\\Administrator\\Desktop\\MCGA\\https-github.com-Ferchu2021-backend-node-api-main\\https-github.com-Ferchu2021-backend-node-api-main\\node_modules\\raw-body\\index.js:227:7)\n' +
+    '    at IncomingMessage.onEnd (C:\\Users\\Administrator\\Desktop\\MCGA\\https-github.com-Ferchu2021-backend-node-api-main\\https-github.com-Ferchu2021-backend-node-api-main\\node_modules\\raw-body\\index.js:287:7)\n' +
+    '    at IncomingMessage.emit (node:events:507:28)\n' +
+    '    at endReadableNT (node:internal/streams/readable:1696:12)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)',
+  url: '/usuario/',
+  method: 'POST',
+  ip: '::1',
+  userAgent: 'PostmanRuntime/7.45.0',
+  level: 'error',
+  message: 'Application Error',
+  timestamp: '2025-08-03 13:52:30'
+}
+{
+  error: "Expected ',' or '}' after property value in JSON at position 55 (line 4 column 3)",
+  stack: "SyntaxError: Expected ',' or '}' after property value in JSON at position 55 (line 4 column 3)\n" +
+    '    at JSON.parse (<anonymous>)\n' +
+    '    at parse (C:\\Users\\Administrator\\Desktop\\MCGA\\https-github.com-Ferchu2021-backend-node-api-main\\https-github.com-Ferchu2021-backend-node-api-main\\node_modules\\body-parser\\lib\\types\\json.js:92:19)\n' +
+    '    at C:\\Users\\Administrator\\Desktop\\MCGA\\https-github.com-Ferchu2021-backend-node-api-main\\https-github.com-Ferchu2021-backend-node-api-main\\node_modules\\body-parser\\lib\\read.js:128:18\n' +
+    '    at AsyncResource.runInAsyncScope (node:async_hooks:214:14)\n' +
+    '    at invokeCallback (C:\\Users\\Administrator\\Desktop\\MCGA\\https-github.com-Ferchu2021-backend-node-api-main\\https-github.com-Ferchu2021-backend-node-api-main\\node_modules\\raw-body\\index.js:238:16)\n' +
+    '    at done (C:\\Users\\Administrator\\Desktop\\MCGA\\https-github.com-Ferchu2021-backend-node-api-main\\https-github.com-Ferchu2021-backend-node-api-main\\node_modules\\raw-body\\index.js:227:7)\n' +
+    '    at IncomingMessage.onEnd (C:\\Users\\Administrator\\Desktop\\MCGA\\https-github.com-Ferchu2021-backend-node-api-main\\https-github.com-Ferchu2021-backend-node-api-main\\node_modules\\raw-body\\index.js:287:7)\n' +
+    '    at IncomingMessage.emit (node:events:507:28)\n' +
+    '    at endReadableNT (node:internal/streams/readable:1696:12)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)',
+  url: '/usuario/',
+  method: 'POST',
+  level: 'error',
+  message: 'Unhandled Error:',
+  timestamp: '2025-08-03 13:52:30'
+}
+{
+  error: "Expected ',' or '}' after property value in JSON at position 55 (line 4 column 3)",
+  stack: "SyntaxError: Expected ',' or '}' after property value in JSON at position 55 (line 4 column 3)\n" +
+    '    at JSON.parse (<anonymous>)\n' +
+    '    at parse (C:\\Users\\Administrator\\Desktop\\MCGA\\https-github.com-Ferchu2021-backend-node-api-main\\https-github.com-Ferchu2021-backend-node-api-main\\node_modules\\body-parser\\lib\\types\\json.js:92:19)\n' +
+    '    at C:\\Users\\Administrator\\Desktop\\MCGA\\https-github.com-Ferchu2021-backend-node-api-main\\https-github.com-Ferchu2021-backend-node-api-main\\node_modules\\body-parser\\lib\\read.js:128:18\n' +
+    '    at AsyncResource.runInAsyncScope (node:async_hooks:214:14)\n' +
+    '    at invokeCallback (C:\\Users\\Administrator\\Desktop\\MCGA\\https-github.com-Ferchu2021-backend-node-api-main\\https-github.com-Ferchu2021-backend-node-api-main\\node_modules\\raw-body\\index.js:238:16)\n' +
+    '    at done (C:\\Users\\Administrator\\Desktop\\MCGA\\https-github.com-Ferchu2021-backend-node-api-main\\https-github.com-Ferchu2021-backend-node-api-main\\node_modules\\raw-body\\index.js:227:7)\n' +
+    '    at IncomingMessage.onEnd (C:\\Users\\Administrator\\Desktop\\MCGA\\https-github.com-Ferchu2021-backend-node-api-main\\https-github.com-Ferchu2021-backend-node-api-main\\node_modules\\raw-body\\index.js:287:7)\n' +
+    '    at IncomingMessage.emit (node:events:507:28)\n' +
+    '    at endReadableNT (node:internal/streams/readable:1696:12)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)',
+  url: '/usuario/',
+  method: 'POST',
+  ip: '::1',
+  userAgent: 'PostmanRuntime/7.45.0',
+  level: 'error',
+  message: 'Application Error',
+  timestamp: '2025-08-03 13:52:36'
+}
+{
+  error: "Expected ',' or '}' after property value in JSON at position 55 (line 4 column 3)",
+  stack: "SyntaxError: Expected ',' or '}' after property value in JSON at position 55 (line 4 column 3)\n" +
+    '    at JSON.parse (<anonymous>)\n' +
+    '    at parse (C:\\Users\\Administrator\\Desktop\\MCGA\\https-github.com-Ferchu2021-backend-node-api-main\\https-github.com-Ferchu2021-backend-node-api-main\\node_modules\\body-parser\\lib\\types\\json.js:92:19)\n' +
+    '    at C:\\Users\\Administrator\\Desktop\\MCGA\\https-github.com-Ferchu2021-backend-node-api-main\\https-github.com-Ferchu2021-backend-node-api-main\\node_modules\\body-parser\\lib\\read.js:128:18\n' +
+    '    at AsyncResource.runInAsyncScope (node:async_hooks:214:14)\n' +
+    '    at invokeCallback (C:\\Users\\Administrator\\Desktop\\MCGA\\https-github.com-Ferchu2021-backend-node-api-main\\https-github.com-Ferchu2021-backend-node-api-main\\node_modules\\raw-body\\index.js:238:16)\n' +
+    '    at done (C:\\Users\\Administrator\\Desktop\\MCGA\\https-github.com-Ferchu2021-backend-node-api-main\\https-github.com-Ferchu2021-backend-node-api-main\\node_modules\\raw-body\\index.js:227:7)\n' +
+    '    at IncomingMessage.onEnd (C:\\Users\\Administrator\\Desktop\\MCGA\\https-github.com-Ferchu2021-backend-node-api-main\\https-github.com-Ferchu2021-backend-node-api-main\\node_modules\\raw-body\\index.js:287:7)\n' +
+    '    at IncomingMessage.emit (node:events:507:28)\n' +
+    '    at endReadableNT (node:internal/streams/readable:1696:12)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)',
+  url: '/usuario/',
+  method: 'POST',
+  level: 'error',
+  message: 'Unhandled Error:',
+  timestamp: '2025-08-03 13:52:36'
+}
+{
+  method: 'POST',
+  url: '/usuario/',
+  status: 404,
+  duration: '3ms',
+  ip: '::1',
+  userAgent: 'PostmanRuntime/7.45.0',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-08-03 13:53:49'
+}
+{
+  method: 'POST',
+  url: '/',
+  status: 409,
+  duration: '48ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-08-03 14:32:15'
+}
+{
+  method: 'POST',
+  url: '/',
+  status: 409,
+  duration: '374ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-08-03 14:33:57'
+}
