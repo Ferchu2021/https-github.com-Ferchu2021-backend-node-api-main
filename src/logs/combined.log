@@ -743,3 +743,1267 @@
   level: 'info',
   timestamp: '2025-08-03 03:09:24'
 }
+{
+  method: 'POST',
+  url: '/',
+  status: 201,
+  duration: '430ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 03:12:32'
+}
+{
+  message: '::1 - - [03/Aug/2025:06:12:32 +0000] "POST /api/usuarios HTTP/1.1" 201 307 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 03:12:32'
+}
+{
+  method: 'GET',
+  url: '/?page=1&limit=5',
+  status: 200,
+  duration: '103ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 03:12:32'
+}
+{
+  message: '::1 - - [03/Aug/2025:06:12:32 +0000] "GET /api/usuarios?page=1&limit=5 HTTP/1.1" 200 1126 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 03:12:32'
+}
+{
+  method: 'GET',
+  url: '/688efdd08981cf957676bfb8',
+  status: 200,
+  duration: '53ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 03:12:32'
+}
+{
+  message: '::1 - - [03/Aug/2025:06:12:33 +0000] "GET /api/usuarios/688efdd08981cf957676bfb8 HTTP/1.1" 200 275 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 03:12:33'
+}
+{
+  method: 'GET',
+  url: '/buscar?q=laptop&limit=3',
+  status: 200,
+  duration: '48ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 03:12:33'
+}
+{
+  message: '::1 - - [03/Aug/2025:06:12:33 +0000] "GET /api/usuarios/buscar?q=laptop&limit=3 HTTP/1.1" 200 760 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 03:12:33'
+}
+{
+  method: 'PUT',
+  url: '/688efdd08981cf957676bfb8',
+  status: 200,
+  duration: '46ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 03:12:33'
+}
+{
+  message: '::1 - - [03/Aug/2025:06:12:33 +0000] "PUT /api/usuarios/688efdd08981cf957676bfb8 HTTP/1.1" 200 344 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 03:12:33'
+}
+{
+  method: 'GET',
+  url: '/estadisticas',
+  status: 200,
+  duration: '46ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 03:12:33'
+}
+{
+  message: '::1 - - [03/Aug/2025:06:12:33 +0000] "GET /api/usuarios/estadisticas HTTP/1.1" 200 43 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 03:12:33'
+}
+{
+  method: 'POST',
+  url: '/',
+  status: 201,
+  duration: '429ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 03:12:33'
+}
+{
+  message: '::1 - - [03/Aug/2025:06:12:33 +0000] "POST /api/usuarios HTTP/1.1" 201 325 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 03:12:33'
+}
+{
+  method: 'GET',
+  url: '/?page=1&limit=2',
+  status: 200,
+  duration: '93ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 03:12:33'
+}
+{
+  message: '::1 - - [03/Aug/2025:06:12:33 +0000] "GET /api/usuarios?page=1&limit=2 HTTP/1.1" 200 677 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 03:12:33'
+}
+{
+  method: 'GET',
+  url: '/buscar?q=macbook&limit=3',
+  status: 200,
+  duration: '46ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 03:12:33'
+}
+{
+  message: '::1 - - [03/Aug/2025:06:12:33 +0000] "GET /api/usuarios/buscar?q=macbook&limit=3 HTTP/1.1" 200 573 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 03:12:33'
+}
+{
+  method: 'DELETE',
+  url: '/688efdd08981cf957676bfb8',
+  status: 200,
+  duration: '60ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 03:12:33'
+}
+{
+  message: '::1 - - [03/Aug/2025:06:12:33 +0000] "DELETE /api/usuarios/688efdd08981cf957676bfb8 HTTP/1.1" 200 343 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 03:12:33'
+}
+{
+  method: 'GET',
+  url: '/?page=1&limit=5',
+  status: 200,
+  duration: '95ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 03:12:33'
+}
+{
+  message: '::1 - - [03/Aug/2025:06:12:33 +0000] "GET /api/usuarios?page=1&limit=5 HTTP/1.1" 200 1144 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 03:12:33'
+}
+{
+  method: 'GET',
+  url: '/estadisticas',
+  status: 200,
+  duration: '48ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 03:12:33'
+}
+{
+  message: '::1 - - [03/Aug/2025:06:12:33 +0000] "GET /api/usuarios/estadisticas HTTP/1.1" 200 43 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 03:12:33'
+}
+{
+  method: 'GET',
+  url: '/health',
+  status: 200,
+  duration: '1ms',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT; Windows NT 10.0; es-AR) WindowsPowerShell/5.1.22621.5624',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 03:13:08'
+}
+{
+  message: '::1 - - [03/Aug/2025:06:13:08 +0000] "GET /health HTTP/1.1" 200 215 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; es-AR) WindowsPowerShell/5.1.22621.5624"',
+  level: 'info',
+  timestamp: '2025-08-03 03:13:08'
+}
+{
+  method: 'POST',
+  url: '/',
+  status: 201,
+  duration: '429ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 03:13:18'
+}
+{
+  message: '::1 - - [03/Aug/2025:06:13:18 +0000] "POST /api/usuarios HTTP/1.1" 201 307 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 03:13:18'
+}
+{
+  method: 'GET',
+  url: '/?page=1&limit=5',
+  status: 200,
+  duration: '93ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 03:13:18'
+}
+{
+  message: '::1 - - [03/Aug/2025:06:13:18 +0000] "GET /api/usuarios?page=1&limit=5 HTTP/1.1" 200 1393 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 03:13:18'
+}
+{
+  method: 'GET',
+  url: '/688efdfd8981cf957676bfcb',
+  status: 200,
+  duration: '50ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 03:13:18'
+}
+{
+  message: '::1 - - [03/Aug/2025:06:13:18 +0000] "GET /api/usuarios/688efdfd8981cf957676bfcb HTTP/1.1" 200 275 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 03:13:18'
+}
+{
+  method: 'GET',
+  url: '/buscar?q=laptop&limit=3',
+  status: 200,
+  duration: '51ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 03:13:18'
+}
+{
+  message: '::1 - - [03/Aug/2025:06:13:18 +0000] "GET /api/usuarios/buscar?q=laptop&limit=3 HTTP/1.1" 200 760 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 03:13:18'
+}
+{
+  method: 'PUT',
+  url: '/688efdfd8981cf957676bfcb',
+  status: 200,
+  duration: '47ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 03:13:18'
+}
+{
+  message: '::1 - - [03/Aug/2025:06:13:18 +0000] "PUT /api/usuarios/688efdfd8981cf957676bfcb HTTP/1.1" 200 344 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 03:13:18'
+}
+{
+  method: 'GET',
+  url: '/estadisticas',
+  status: 200,
+  duration: '46ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 03:13:18'
+}
+{
+  message: '::1 - - [03/Aug/2025:06:13:18 +0000] "GET /api/usuarios/estadisticas HTTP/1.1" 200 43 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 03:13:18'
+}
+{
+  method: 'POST',
+  url: '/',
+  status: 201,
+  duration: '389ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 03:13:19'
+}
+{
+  message: '::1 - - [03/Aug/2025:06:13:19 +0000] "POST /api/usuarios HTTP/1.1" 201 325 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 03:13:19'
+}
+{
+  method: 'GET',
+  url: '/?page=1&limit=2',
+  status: 200,
+  duration: '98ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 03:13:19'
+}
+{
+  message: '::1 - - [03/Aug/2025:06:13:19 +0000] "GET /api/usuarios?page=1&limit=2 HTTP/1.1" 200 677 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 03:13:19'
+}
+{
+  method: 'GET',
+  url: '/buscar?q=macbook&limit=3',
+  status: 200,
+  duration: '56ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 03:13:19'
+}
+{
+  message: '::1 - - [03/Aug/2025:06:13:19 +0000] "GET /api/usuarios/buscar?q=macbook&limit=3 HTTP/1.1" 200 840 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 03:13:19'
+}
+{
+  method: 'DELETE',
+  url: '/688efdfd8981cf957676bfcb',
+  status: 200,
+  duration: '53ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 03:13:19'
+}
+{
+  message: '::1 - - [03/Aug/2025:06:13:19 +0000] "DELETE /api/usuarios/688efdfd8981cf957676bfcb HTTP/1.1" 200 343 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 03:13:19'
+}
+{
+  method: 'GET',
+  url: '/?page=1&limit=5',
+  status: 200,
+  duration: '106ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 03:13:19'
+}
+{
+  message: '::1 - - [03/Aug/2025:06:13:19 +0000] "GET /api/usuarios?page=1&limit=5 HTTP/1.1" 200 1411 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 03:13:19'
+}
+{
+  method: 'GET',
+  url: '/estadisticas',
+  status: 200,
+  duration: '47ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 03:13:19'
+}
+{
+  message: '::1 - - [03/Aug/2025:06:13:19 +0000] "GET /api/usuarios/estadisticas HTTP/1.1" 200 43 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 03:13:19'
+}
+{
+  method: 'GET',
+  url: '/',
+  status: 200,
+  duration: '97ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 03:13:33'
+}
+{
+  message: '::1 - - [03/Aug/2025:06:13:33 +0000] "GET /api/usuarios HTTP/1.1" 200 1412 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 03:13:33'
+}
+{
+  method: 'GET',
+  url: '/health',
+  status: 200,
+  duration: '1ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 03:19:19'
+}
+{
+  message: '::1 - - [03/Aug/2025:06:19:19 +0000] "GET /health HTTP/1.1" 200 215 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 03:19:19'
+}
+{
+  method: 'GET',
+  url: '/',
+  status: 200,
+  duration: '4ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 03:19:19'
+}
+{
+  message: '::1 - - [03/Aug/2025:06:19:19 +0000] "GET / HTTP/1.1" 200 223 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 03:19:19'
+}
+{
+  method: 'POST',
+  url: '/register',
+  status: 400,
+  duration: '15ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-08-03 03:19:20'
+}
+{
+  message: '::1 - - [03/Aug/2025:06:19:20 +0000] "POST /api/auth/register HTTP/1.1" 400 360 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 03:19:20'
+}
+{
+  method: 'POST',
+  url: '/login',
+  status: 400,
+  duration: '3ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-08-03 03:19:20'
+}
+{
+  message: '::1 - - [03/Aug/2025:06:19:20 +0000] "POST /api/auth/login HTTP/1.1" 400 112 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 03:19:20'
+}
+{
+  method: 'GET',
+  url: '/?page=1&limit=5',
+  status: 200,
+  duration: '94ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 03:19:20'
+}
+{
+  message: '::1 - - [03/Aug/2025:06:19:20 +0000] "GET /api/usuarios?page=1&limit=5 HTTP/1.1" 200 1411 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 03:19:20'
+}
+{
+  method: 'POST',
+  url: '/',
+  status: 201,
+  duration: '397ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 03:19:20'
+}
+{
+  message: '::1 - - [03/Aug/2025:06:19:20 +0000] "POST /api/usuarios HTTP/1.1" 201 310 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 03:19:20'
+}
+{
+  method: 'GET',
+  url: '/688eff688981cf957676bfe2',
+  status: 200,
+  duration: '45ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 03:19:20'
+}
+{
+  message: '::1 - - [03/Aug/2025:06:19:20 +0000] "GET /api/usuarios/688eff688981cf957676bfe2 HTTP/1.1" 200 278 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 03:19:20'
+}
+{
+  method: 'GET',
+  url: '/buscar?q=laptop&limit=3',
+  status: 200,
+  duration: '47ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 03:19:20'
+}
+{
+  message: '::1 - - [03/Aug/2025:06:19:20 +0000] "GET /api/usuarios/buscar?q=laptop&limit=3 HTTP/1.1" 200 763 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 03:19:20'
+}
+{
+  method: 'GET',
+  url: '/estadisticas',
+  status: 200,
+  duration: '49ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 03:19:20'
+}
+{
+  message: '::1 - - [03/Aug/2025:06:19:20 +0000] "GET /api/usuarios/estadisticas HTTP/1.1" 200 43 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 03:19:20'
+}
+{
+  method: 'GET',
+  url: '/',
+  status: 200,
+  duration: '46ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 03:19:20'
+}
+{
+  message: '::1 - - [03/Aug/2025:06:19:20 +0000] "GET /api/data HTTP/1.1" 200 2 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 03:19:20'
+}
+{
+  method: 'POST',
+  url: '/',
+  status: 401,
+  duration: '4ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-08-03 03:19:20'
+}
+{
+  message: '::1 - - [03/Aug/2025:06:19:20 +0000] "POST /api/data HTTP/1.1" 401 52 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 03:19:20'
+}
+{
+  method: 'POST',
+  url: '/api/firebase/login',
+  status: 404,
+  duration: '4ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-08-03 03:19:20'
+}
+{
+  message: '::1 - - [03/Aug/2025:06:19:20 +0000] "POST /api/firebase/login HTTP/1.1" 404 75 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 03:19:20'
+}
+{
+  method: 'POST',
+  url: '/api/firebase/register',
+  status: 404,
+  duration: '2ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-08-03 03:19:20'
+}
+{
+  message: '::1 - - [03/Aug/2025:06:19:20 +0000] "POST /api/firebase/register HTTP/1.1" 404 78 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 03:19:20'
+}
+{
+  method: 'POST',
+  url: '/',
+  status: 201,
+  duration: '479ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 03:19:21'
+}
+{
+  message: '::1 - - [03/Aug/2025:06:19:21 +0000] "POST /api/usuarios HTTP/1.1" 201 281 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 03:19:21'
+}
+{
+  method: 'POST',
+  url: '/',
+  status: 400,
+  duration: '57ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-08-03 03:19:21'
+}
+{
+  message: '::1 - - [03/Aug/2025:06:19:21 +0000] "POST /api/usuarios HTTP/1.1" 400 211 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 03:19:21'
+}
+{
+  method: 'GET',
+  url: '/invalid-id',
+  status: 400,
+  duration: '21ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-08-03 03:19:21'
+}
+{
+  message: '::1 - - [03/Aug/2025:06:19:21 +0000] "GET /api/usuarios/invalid-id HTTP/1.1" 400 164 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 03:19:21'
+}
+{
+  method: 'GET',
+  url: '/507f1f77bcf86cd799439011',
+  status: 404,
+  duration: '46ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-08-03 03:19:21'
+}
+{
+  message: '::1 - - [03/Aug/2025:06:19:21 +0000] "GET /api/usuarios/507f1f77bcf86cd799439011 HTTP/1.1" 404 51 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 03:19:21'
+}
+{
+  method: 'GET',
+  url: '/?page=1&limit=2',
+  status: 200,
+  duration: '94ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 03:19:21'
+}
+{
+  message: '::1 - - [03/Aug/2025:06:19:21 +0000] "GET /api/usuarios?page=1&limit=2 HTTP/1.1" 200 612 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 03:19:21'
+}
+{
+  method: 'GET',
+  url: '/buscar?q=test&limit=5',
+  status: 200,
+  duration: '51ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 03:19:21'
+}
+{
+  message: '::1 - - [03/Aug/2025:06:19:21 +0000] "GET /api/usuarios/buscar?q=test&limit=5 HTTP/1.1" 200 262 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 03:19:21'
+}
+{
+  method: 'GET',
+  url: '/health',
+  status: 200,
+  duration: '1ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 03:19:21'
+}
+{
+  message: '::1 - - [03/Aug/2025:06:19:21 +0000] "GET /health HTTP/1.1" 200 214 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 03:19:21'
+}
+{
+  method: 'GET',
+  url: '/health',
+  status: 200,
+  duration: '4ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 03:19:21'
+}
+{
+  message: '::1 - - [03/Aug/2025:06:19:21 +0000] "GET /health HTTP/1.1" 200 215 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 03:19:21'
+}
+{
+  method: 'GET',
+  url: '/health',
+  status: 200,
+  duration: '4ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 03:19:21'
+}
+{
+  message: '::1 - - [03/Aug/2025:06:19:21 +0000] "GET /health HTTP/1.1" 200 214 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 03:19:21'
+}
+{
+  method: 'GET',
+  url: '/health',
+  status: 200,
+  duration: '2ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 03:19:21'
+}
+{
+  message: '::1 - - [03/Aug/2025:06:19:21 +0000] "GET /health HTTP/1.1" 200 215 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 03:19:21'
+}
+{
+  method: 'GET',
+  url: '/health',
+  status: 200,
+  duration: '4ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 03:19:21'
+}
+{
+  message: '::1 - - [03/Aug/2025:06:19:21 +0000] "GET /health HTTP/1.1" 200 215 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 03:19:21'
+}
+{
+  method: 'GET',
+  url: '/health',
+  status: 200,
+  duration: '1ms',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT; Windows NT 10.0; es-AR) WindowsPowerShell/5.1.22621.5624',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 03:19:25'
+}
+{
+  message: '::1 - - [03/Aug/2025:06:19:25 +0000] "GET /health HTTP/1.1" 200 215 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; es-AR) WindowsPowerShell/5.1.22621.5624"',
+  level: 'info',
+  timestamp: '2025-08-03 03:19:25'
+}
+{
+  method: 'GET',
+  url: '/health',
+  status: 200,
+  duration: '1ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 03:19:34'
+}
+{
+  message: '::1 - - [03/Aug/2025:06:19:34 +0000] "GET /health HTTP/1.1" 200 215 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 03:19:34'
+}
+{
+  method: 'GET',
+  url: '/',
+  status: 200,
+  duration: '2ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 03:19:34'
+}
+{
+  message: '::1 - - [03/Aug/2025:06:19:34 +0000] "GET / HTTP/1.1" 200 223 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 03:19:34'
+}
+{
+  method: 'GET',
+  url: '/',
+  status: 200,
+  duration: '93ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 03:19:35'
+}
+{
+  message: '::1 - - [03/Aug/2025:06:19:35 +0000] "GET /api/usuarios HTTP/1.1" 200 1887 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 03:19:35'
+}
+{
+  method: 'POST',
+  url: '/register',
+  status: 400,
+  duration: '7ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-08-03 03:19:35'
+}
+{
+  message: '::1 - - [03/Aug/2025:06:19:35 +0000] "POST /api/auth/register HTTP/1.1" 400 247 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 03:19:35'
+}
+{
+  method: 'GET',
+  url: '/health',
+  status: 200,
+  duration: '1ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 03:20:31'
+}
+{
+  message: '::1 - - [03/Aug/2025:06:20:31 +0000] "GET /health HTTP/1.1" 200 214 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 03:20:31'
+}
+{
+  method: 'GET',
+  url: '/',
+  status: 200,
+  duration: '2ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 03:20:31'
+}
+{
+  message: '::1 - - [03/Aug/2025:06:20:31 +0000] "GET / HTTP/1.1" 200 223 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 03:20:31'
+}
+{
+  method: 'GET',
+  url: '/',
+  status: 200,
+  duration: '90ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 03:20:31'
+}
+{
+  message: '::1 - - [03/Aug/2025:06:20:31 +0000] "GET /api/usuarios HTTP/1.1" 200 1887 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 03:20:31'
+}
+{
+  method: 'POST',
+  url: '/',
+  status: 201,
+  duration: '395ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 03:20:32'
+}
+{
+  message: '::1 - - [03/Aug/2025:06:20:32 +0000] "POST /api/usuarios HTTP/1.1" 201 296 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 03:20:32'
+}
+{
+  method: 'GET',
+  url: '/688effaf8981cf957676bff6',
+  status: 200,
+  duration: '45ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 03:20:32'
+}
+{
+  message: '::1 - - [03/Aug/2025:06:20:32 +0000] "GET /api/usuarios/688effaf8981cf957676bff6 HTTP/1.1" 200 264 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 03:20:32'
+}
+{
+  method: 'GET',
+  url: '/buscar?q=laptop',
+  status: 200,
+  duration: '48ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 03:20:32'
+}
+{
+  message: '::1 - - [03/Aug/2025:06:20:32 +0000] "GET /api/usuarios/buscar?q=laptop HTTP/1.1" 200 1001 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 03:20:32'
+}
+{
+  method: 'GET',
+  url: '/estadisticas',
+  status: 200,
+  duration: '45ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 03:20:32'
+}
+{
+  message: '::1 - - [03/Aug/2025:06:20:32 +0000] "GET /api/usuarios/estadisticas HTTP/1.1" 200 43 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 03:20:32'
+}
+{
+  method: 'POST',
+  url: '/register',
+  status: 400,
+  duration: '1ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-08-03 03:20:32'
+}
+{
+  message: '::1 - - [03/Aug/2025:06:20:32 +0000] "POST /api/auth/register HTTP/1.1" 400 360 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 03:20:32'
+}
+{
+  method: 'GET',
+  url: '/health',
+  status: 200,
+  duration: '1ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 03:21:47'
+}
+{
+  message: '::1 - - [03/Aug/2025:06:21:47 +0000] "GET /health HTTP/1.1" 200 215 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 03:21:47'
+}
+{
+  method: 'GET',
+  url: '/',
+  status: 200,
+  duration: '1ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 03:21:47'
+}
+{
+  message: '::1 - - [03/Aug/2025:06:21:47 +0000] "GET / HTTP/1.1" 200 223 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 03:21:47'
+}
+{
+  method: 'GET',
+  url: '/',
+  status: 200,
+  duration: '94ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 03:21:48'
+}
+{
+  message: '::1 - - [03/Aug/2025:06:21:48 +0000] "GET /api/usuarios HTTP/1.1" 200 2125 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 03:21:48'
+}
+{
+  method: 'POST',
+  url: '/',
+  status: 201,
+  duration: '463ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 03:21:48'
+}
+{
+  message: '::1 - - [03/Aug/2025:06:21:48 +0000] "POST /api/usuarios HTTP/1.1" 201 296 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 03:21:48'
+}
+{
+  method: 'GET',
+  url: '/688efffc8981cf957676bffe',
+  status: 200,
+  duration: '54ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 03:21:48'
+}
+{
+  message: '::1 - - [03/Aug/2025:06:21:48 +0000] "GET /api/usuarios/688efffc8981cf957676bffe HTTP/1.1" 200 264 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 03:21:48'
+}
+{
+  method: 'GET',
+  url: '/buscar?q=laptop',
+  status: 200,
+  duration: '48ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 03:21:48'
+}
+{
+  message: '::1 - - [03/Aug/2025:06:21:48 +0000] "GET /api/usuarios/buscar?q=laptop HTTP/1.1" 200 1239 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 03:21:48'
+}
+{
+  method: 'GET',
+  url: '/estadisticas',
+  status: 200,
+  duration: '48ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 03:21:48'
+}
+{
+  message: '::1 - - [03/Aug/2025:06:21:48 +0000] "GET /api/usuarios/estadisticas HTTP/1.1" 200 43 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 03:21:48'
+}
+{
+  method: 'POST',
+  url: '/register',
+  status: 500,
+  duration: '66ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-08-03 03:21:48'
+}
+{
+  message: '::1 - - [03/Aug/2025:06:21:48 +0000] "POST /api/auth/register HTTP/1.1" 500 38 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 03:21:48'
+}
+{
+  method: 'GET',
+  url: '/',
+  status: 200,
+  duration: '91ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 03:21:53'
+}
+{
+  message: '::1 - - [03/Aug/2025:06:21:53 +0000] "GET /api/usuarios HTTP/1.1" 200 2363 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 03:21:53'
+}
+{
+  method: 'GET',
+  url: '/health',
+  status: 200,
+  duration: '3ms',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT; Windows NT 10.0; es-AR) WindowsPowerShell/5.1.22621.5624',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 03:22:00'
+}
+{
+  message: '::1 - - [03/Aug/2025:06:22:00 +0000] "GET /health HTTP/1.1" 200 215 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; es-AR) WindowsPowerShell/5.1.22621.5624"',
+  level: 'info',
+  timestamp: '2025-08-03 03:22:00'
+}
+{
+  method: 'GET',
+  url: '/api/users',
+  status: 404,
+  duration: '1ms',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-08-03 03:27:45'
+}
+{
+  message: '::1 - - [03/Aug/2025:06:27:45 +0000] "GET /api/users HTTP/1.1" 404 65 "http://localhost:5181/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"',
+  level: 'info',
+  timestamp: '2025-08-03 03:27:45'
+}
+{
+  method: 'GET',
+  url: '/api/users',
+  status: 404,
+  duration: '1ms',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-08-03 03:27:45'
+}
+{
+  message: '::1 - - [03/Aug/2025:06:27:45 +0000] "GET /api/users HTTP/1.1" 404 65 "http://localhost:5181/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"',
+  level: 'info',
+  timestamp: '2025-08-03 03:27:45'
+}
+{
+  method: 'GET',
+  url: '/',
+  status: 200,
+  duration: '445ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 11:24:08'
+}
+{
+  message: '::1 - - [03/Aug/2025:14:24:08 +0000] "GET /api/usuarios HTTP/1.1" 200 2363 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 11:24:08'
+}
+{
+  method: 'GET',
+  url: '/',
+  status: 200,
+  duration: '93ms',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT; Windows NT 10.0; es-AR) WindowsPowerShell/5.1.22621.5624',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 11:24:20'
+}
+{
+  message: '::1 - - [03/Aug/2025:14:24:20 +0000] "GET /api/usuarios HTTP/1.1" 200 2363 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; es-AR) WindowsPowerShell/5.1.22621.5624"',
+  level: 'info',
+  timestamp: '2025-08-03 11:24:20'
+}
+{
+  method: 'GET',
+  url: '/health',
+  status: 200,
+  duration: '2ms',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT; Windows NT 10.0; es-AR) WindowsPowerShell/5.1.22621.5624',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 11:51:46'
+}
+{
+  message: '::1 - - [03/Aug/2025:14:51:46 +0000] "GET /health HTTP/1.1" 200 216 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; es-AR) WindowsPowerShell/5.1.22621.5624"',
+  level: 'info',
+  timestamp: '2025-08-03 11:51:46'
+}
+{
+  method: 'GET',
+  url: '/health',
+  status: 200,
+  duration: '0ms',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT; Windows NT 10.0; es-AR) WindowsPowerShell/5.1.22621.5624',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 11:52:07'
+}
+{
+  message: '::1 - - [03/Aug/2025:14:52:07 +0000] "GET /health HTTP/1.1" 200 216 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; es-AR) WindowsPowerShell/5.1.22621.5624"',
+  level: 'info',
+  timestamp: '2025-08-03 11:52:07'
+}

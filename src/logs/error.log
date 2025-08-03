@@ -182,3 +182,157 @@
   message: 'HTTP Request Error',
   timestamp: '2025-08-03 02:46:15'
 }
+{
+  method: 'GET',
+  url: '/.well-known/appspecific/com.chrome.devtools.json',
+  status: 404,
+  duration: '1ms',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-08-03 03:09:24'
+}
+{
+  method: 'POST',
+  url: '/register',
+  status: 400,
+  duration: '15ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-08-03 03:19:20'
+}
+{
+  method: 'POST',
+  url: '/login',
+  status: 400,
+  duration: '3ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-08-03 03:19:20'
+}
+{
+  method: 'POST',
+  url: '/',
+  status: 401,
+  duration: '4ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-08-03 03:19:20'
+}
+{
+  method: 'POST',
+  url: '/api/firebase/login',
+  status: 404,
+  duration: '4ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-08-03 03:19:20'
+}
+{
+  method: 'POST',
+  url: '/api/firebase/register',
+  status: 404,
+  duration: '2ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-08-03 03:19:20'
+}
+{
+  method: 'POST',
+  url: '/',
+  status: 400,
+  duration: '57ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-08-03 03:19:21'
+}
+{
+  method: 'GET',
+  url: '/invalid-id',
+  status: 400,
+  duration: '21ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-08-03 03:19:21'
+}
+{
+  method: 'GET',
+  url: '/507f1f77bcf86cd799439011',
+  status: 404,
+  duration: '46ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-08-03 03:19:21'
+}
+{
+  method: 'POST',
+  url: '/register',
+  status: 400,
+  duration: '7ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-08-03 03:19:35'
+}
+{
+  method: 'POST',
+  url: '/register',
+  status: 400,
+  duration: '1ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-08-03 03:20:32'
+}
+{
+  method: 'POST',
+  url: '/register',
+  status: 500,
+  duration: '66ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-08-03 03:21:48'
+}
+{
+  method: 'GET',
+  url: '/api/users',
+  status: 404,
+  duration: '1ms',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-08-03 03:27:45'
+}
+{
+  method: 'GET',
+  url: '/api/users',
+  status: 404,
+  duration: '1ms',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-08-03 03:27:45'
+}
