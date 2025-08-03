@@ -327,3 +327,179 @@
   level: 'info',
   timestamp: '2025-08-02 21:52:21'
 }
+{
+  port: 3001,
+  environment: 'development',
+  mongoUri: 'Configurado',
+  level: 'info',
+  message: 'Servidor iniciado correctamente',
+  timestamp: '2025-08-03 02:44:05'
+}
+{
+  method: 'GET',
+  url: '/health',
+  status: 200,
+  duration: '13ms',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT; Windows NT 10.0; es-AR) WindowsPowerShell/5.1.22621.5624',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 02:44:05'
+}
+{
+  message: '::1 - - [03/Aug/2025:05:44:05 +0000] "GET /health HTTP/1.1" 200 213 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; es-AR) WindowsPowerShell/5.1.22621.5624"',
+  level: 'info',
+  timestamp: '2025-08-03 02:44:05'
+}
+{
+  method: 'POST',
+  url: '/',
+  status: 201,
+  duration: '497ms',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT; Windows NT 10.0; es-AR) WindowsPowerShell/5.1.22621.5624',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 02:44:26'
+}
+{
+  message: '::1 - - [03/Aug/2025:05:44:26 +0000] "POST /api/usuarios HTTP/1.1" 201 281 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; es-AR) WindowsPowerShell/5.1.22621.5624"',
+  level: 'info',
+  timestamp: '2025-08-03 02:44:26'
+}
+{
+  method: 'POST',
+  url: '/',
+  status: 409,
+  duration: '50ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-08-03 02:45:07'
+}
+{
+  message: '::1 - - [03/Aug/2025:05:45:07 +0000] "POST /api/usuarios HTTP/1.1" 409 58 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 02:45:07'
+}
+{
+  method: 'POST',
+  url: '/',
+  status: 409,
+  duration: '401ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-08-03 02:46:15'
+}
+{
+  message: '::1 - - [03/Aug/2025:05:46:15 +0000] "POST /api/usuarios HTTP/1.1" 409 58 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 02:46:15'
+}
+{
+  method: 'GET',
+  url: '/health',
+  status: 200,
+  duration: '1ms',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT; Windows NT 10.0; es-AR) WindowsPowerShell/5.1.22621.5624',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 02:46:24'
+}
+{
+  message: '::1 - - [03/Aug/2025:05:46:24 +0000] "GET /health HTTP/1.1" 200 214 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; es-AR) WindowsPowerShell/5.1.22621.5624"',
+  level: 'info',
+  timestamp: '2025-08-03 02:46:24'
+}
+{
+  method: 'GET',
+  url: '/health',
+  status: 200,
+  duration: '1ms',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT; Windows NT 10.0; es-AR) WindowsPowerShell/5.1.22621.5624',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 02:52:06'
+}
+{
+  message: '::1 - - [03/Aug/2025:05:52:06 +0000] "GET /health HTTP/1.1" 200 214 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; es-AR) WindowsPowerShell/5.1.22621.5624"',
+  level: 'info',
+  timestamp: '2025-08-03 02:52:06'
+}
+{
+  port: 3001,
+  environment: 'development',
+  mongoUri: 'Configurado',
+  level: 'info',
+  message: 'Servidor iniciado correctamente',
+  timestamp: '2025-08-03 02:54:25'
+}
+{
+  method: 'POST',
+  url: '/',
+  status: 201,
+  duration: '451ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 02:55:10'
+}
+{
+  message: '::1 - - [03/Aug/2025:05:55:10 +0000] "POST /api/usuarios HTTP/1.1" 201 307 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 02:55:10'
+}
+{
+  method: 'GET',
+  url: '/?page=1&limit=5',
+  status: 200,
+  duration: '101ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 02:55:10'
+}
+{
+  message: '::1 - - [03/Aug/2025:05:55:10 +0000] "GET /api/usuarios?page=1&limit=5 HTTP/1.1" 200 610 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 02:55:10'
+}
+{
+  method: 'GET',
+  url: '/688ef9be8981cf957676bf9e',
+  status: 200,
+  duration: '49ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 02:55:11'
+}
+{
+  message: '::1 - - [03/Aug/2025:05:55:11 +0000] "GET /api/usuarios/688ef9be8981cf957676bf9e HTTP/1.1" 200 275 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 02:55:11'
+}
+{
+  method: 'GET',
+  url: '/buscar?q=laptop&limit=3',
+  status: 200,
+  duration: '58ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 02:55:11'
+}
+{
+  message: '::1 - - [03/Aug/2025:05:55:11 +0000] "GET /api/usuarios/buscar?q=laptop&limit=3 HTTP/1.1" 200 511 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 02:55:11'
+}

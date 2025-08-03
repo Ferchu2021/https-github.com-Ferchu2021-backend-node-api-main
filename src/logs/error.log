@@ -160,3 +160,25 @@
   timestamp: '2025-08-02 21:20:17',
   [Symbol(errorLabels)]: Set(2) { 'HandshakeError', 'ResetPool' }
 }
+{
+  method: 'POST',
+  url: '/',
+  status: 409,
+  duration: '50ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-08-03 02:45:07'
+}
+{
+  method: 'POST',
+  url: '/',
+  status: 409,
+  duration: '401ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-08-03 02:46:15'
+}

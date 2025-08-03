@@ -13,7 +13,7 @@ const { logRequest, logError, logger } = require('./utils/logger');
 // Importar rutas
 const authRoutes = require("./routes/auth");
 const dataRoutes = require("./routes/data");
-const usuariosRoutes = require('./routes/usuario');
+const usuariosRoutes = require('./routes/usuarioRoutes');
 const firebaseRoutes = require('./routes/firebase');
 
 const app = express();
