@@ -503,3 +503,243 @@
   level: 'info',
   timestamp: '2025-08-03 02:55:11'
 }
+{
+  method: 'GET',
+  url: '/health',
+  status: 200,
+  duration: '2ms',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT; Windows NT 10.0; es-AR) WindowsPowerShell/5.1.22621.5624',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 03:00:59'
+}
+{
+  message: '::1 - - [03/Aug/2025:06:00:59 +0000] "GET /health HTTP/1.1" 200 214 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; es-AR) WindowsPowerShell/5.1.22621.5624"',
+  level: 'info',
+  timestamp: '2025-08-03 03:00:59'
+}
+{
+  method: 'POST',
+  url: '/',
+  status: 201,
+  duration: '430ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 03:02:33'
+}
+{
+  message: '::1 - - [03/Aug/2025:06:02:33 +0000] "POST /api/usuarios HTTP/1.1" 201 307 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 03:02:33'
+}
+{
+  method: 'GET',
+  url: '/?page=1&limit=5',
+  status: 200,
+  duration: '95ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 03:02:33'
+}
+{
+  message: '::1 - - [03/Aug/2025:06:02:33 +0000] "GET /api/usuarios?page=1&limit=5 HTTP/1.1" 200 859 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 03:02:33'
+}
+{
+  method: 'GET',
+  url: '/688efb798981cf957676bfa5',
+  status: 200,
+  duration: '54ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 03:02:33'
+}
+{
+  message: '::1 - - [03/Aug/2025:06:02:33 +0000] "GET /api/usuarios/688efb798981cf957676bfa5 HTTP/1.1" 200 275 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 03:02:33'
+}
+{
+  method: 'GET',
+  url: '/buscar?q=laptop&limit=3',
+  status: 200,
+  duration: '46ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 03:02:33'
+}
+{
+  message: '::1 - - [03/Aug/2025:06:02:33 +0000] "GET /api/usuarios/buscar?q=laptop&limit=3 HTTP/1.1" 200 760 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 03:02:33'
+}
+{
+  method: 'PUT',
+  url: '/688efb798981cf957676bfa5',
+  status: 200,
+  duration: '64ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 03:02:33'
+}
+{
+  message: '::1 - - [03/Aug/2025:06:02:33 +0000] "PUT /api/usuarios/688efb798981cf957676bfa5 HTTP/1.1" 200 344 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 03:02:33'
+}
+{
+  method: 'GET',
+  url: '/estadisticas',
+  status: 200,
+  duration: '47ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 03:02:33'
+}
+{
+  message: '::1 - - [03/Aug/2025:06:02:33 +0000] "GET /api/usuarios/estadisticas HTTP/1.1" 200 43 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 03:02:33'
+}
+{
+  method: 'POST',
+  url: '/',
+  status: 201,
+  duration: '378ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 03:02:34'
+}
+{
+  message: '::1 - - [03/Aug/2025:06:02:34 +0000] "POST /api/usuarios HTTP/1.1" 201 325 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 03:02:34'
+}
+{
+  method: 'GET',
+  url: '/?page=1&limit=2',
+  status: 200,
+  duration: '99ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 03:02:34'
+}
+{
+  message: '::1 - - [03/Aug/2025:06:02:34 +0000] "GET /api/usuarios?page=1&limit=2 HTTP/1.1" 200 677 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 03:02:34'
+}
+{
+  method: 'GET',
+  url: '/buscar?q=macbook&limit=3',
+  status: 200,
+  duration: '51ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 03:02:34'
+}
+{
+  message: '::1 - - [03/Aug/2025:06:02:34 +0000] "GET /api/usuarios/buscar?q=macbook&limit=3 HTTP/1.1" 200 306 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 03:02:34'
+}
+{
+  method: 'DELETE',
+  url: '/688efb798981cf957676bfa5',
+  status: 200,
+  duration: '61ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 03:02:34'
+}
+{
+  message: '::1 - - [03/Aug/2025:06:02:34 +0000] "DELETE /api/usuarios/688efb798981cf957676bfa5 HTTP/1.1" 200 343 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 03:02:34'
+}
+{
+  method: 'GET',
+  url: '/?page=1&limit=5',
+  status: 200,
+  duration: '98ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 03:02:34'
+}
+{
+  message: '::1 - - [03/Aug/2025:06:02:34 +0000] "GET /api/usuarios?page=1&limit=5 HTTP/1.1" 200 877 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 03:02:34'
+}
+{
+  method: 'GET',
+  url: '/estadisticas',
+  status: 200,
+  duration: '45ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 03:02:34'
+}
+{
+  message: '::1 - - [03/Aug/2025:06:02:34 +0000] "GET /api/usuarios/estadisticas HTTP/1.1" 200 43 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 03:02:34'
+}
+{
+  method: 'GET',
+  url: '/',
+  status: 200,
+  duration: '2ms',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 03:09:24'
+}
+{
+  message: '::1 - - [03/Aug/2025:06:09:24 +0000] "GET / HTTP/1.1" 200 223 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"',
+  level: 'info',
+  timestamp: '2025-08-03 03:09:24'
+}
+{
+  method: 'GET',
+  url: '/.well-known/appspecific/com.chrome.devtools.json',
+  status: 404,
+  duration: '1ms',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-08-03 03:09:24'
+}
+{
+  message: '::1 - - [03/Aug/2025:06:09:24 +0000] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 104 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"',
+  level: 'info',
+  timestamp: '2025-08-03 03:09:24'
+}
