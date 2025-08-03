@@ -2007,3 +2007,67 @@
   level: 'info',
   timestamp: '2025-08-03 11:52:07'
 }
+{
+  method: 'GET',
+  url: '/api/firebase/login',
+  status: 404,
+  duration: '1ms',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT; Windows NT 10.0; es-AR) WindowsPowerShell/5.1.22621.5624',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-08-03 12:10:21'
+}
+{
+  message: '::1 - - [03/Aug/2025:15:10:21 +0000] "GET /api/firebase/login HTTP/1.1" 404 74 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; es-AR) WindowsPowerShell/5.1.22621.5624"',
+  level: 'info',
+  timestamp: '2025-08-03 12:10:21'
+}
+{
+  method: 'GET',
+  url: '/',
+  status: 200,
+  duration: '3ms',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 12:13:27'
+}
+{
+  message: '::1 - - [03/Aug/2025:15:13:27 +0000] "GET / HTTP/1.1" 200 223 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"',
+  level: 'info',
+  timestamp: '2025-08-03 12:13:27'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 404,
+  duration: '2ms',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-08-03 12:13:27'
+}
+{
+  message: '::1 - - [03/Aug/2025:15:13:27 +0000] "GET /favicon.ico HTTP/1.1" 404 67 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"',
+  level: 'info',
+  timestamp: '2025-08-03 12:13:27'
+}
+{
+  method: 'GET',
+  url: '/.well-known/appspecific/com.chrome.devtools.json',
+  status: 404,
+  duration: '1ms',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-08-03 12:13:27'
+}
+{
+  message: '::1 - - [03/Aug/2025:15:13:27 +0000] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 104 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"',
+  level: 'info',
+  timestamp: '2025-08-03 12:13:27'
+}

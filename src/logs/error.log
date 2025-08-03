@@ -336,3 +336,36 @@
   message: 'HTTP Request Error',
   timestamp: '2025-08-03 03:27:45'
 }
+{
+  method: 'GET',
+  url: '/api/firebase/login',
+  status: 404,
+  duration: '1ms',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT; Windows NT 10.0; es-AR) WindowsPowerShell/5.1.22621.5624',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-08-03 12:10:21'
+}
+{
+  method: 'GET',
+  url: '/favicon.ico',
+  status: 404,
+  duration: '2ms',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-08-03 12:13:27'
+}
+{
+  method: 'GET',
+  url: '/.well-known/appspecific/com.chrome.devtools.json',
+  status: 404,
+  duration: '1ms',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-08-03 12:13:27'
+}
