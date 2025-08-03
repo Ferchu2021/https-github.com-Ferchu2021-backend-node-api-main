@@ -2487,3 +2487,667 @@
   level: 'info',
   timestamp: '2025-08-03 14:33:57'
 }
+{
+  method: 'POST',
+  url: '/usuario/',
+  status: 404,
+  duration: '3ms',
+  ip: '::1',
+  userAgent: 'PostmanRuntime/7.45.0',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-08-03 15:00:11'
+}
+{
+  message: '::1 - - [03/Aug/2025:18:00:11 +0000] "POST /usuario/ HTTP/1.1" 404 65 "-" "PostmanRuntime/7.45.0"',
+  level: 'info',
+  timestamp: '2025-08-03 15:00:11'
+}
+{
+  method: 'POST',
+  url: '/usuario/',
+  status: 404,
+  duration: '2ms',
+  ip: '::1',
+  userAgent: 'PostmanRuntime/7.45.0',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-08-03 15:01:49'
+}
+{
+  message: '::1 - - [03/Aug/2025:18:01:49 +0000] "POST /usuario/ HTTP/1.1" 404 65 "-" "PostmanRuntime/7.45.0"',
+  level: 'info',
+  timestamp: '2025-08-03 15:01:49'
+}
+{
+  method: 'POST',
+  url: '/usuario/',
+  status: 404,
+  duration: '2ms',
+  ip: '::1',
+  userAgent: 'PostmanRuntime/7.45.0',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-08-03 15:02:46'
+}
+{
+  message: '::1 - - [03/Aug/2025:18:02:46 +0000] "POST /usuario/ HTTP/1.1" 404 65 "-" "PostmanRuntime/7.45.0"',
+  level: 'info',
+  timestamp: '2025-08-03 15:02:46'
+}
+{
+  method: 'POST',
+  url: '/usuario/',
+  status: 404,
+  duration: '5ms',
+  ip: '::1',
+  userAgent: 'PostmanRuntime/7.45.0',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-08-03 15:09:20'
+}
+{
+  message: '::1 - - [03/Aug/2025:18:09:20 +0000] "POST /usuario/ HTTP/1.1" 404 65 "-" "PostmanRuntime/7.45.0"',
+  level: 'info',
+  timestamp: '2025-08-03 15:09:20'
+}
+{
+  method: 'GET',
+  url: '/',
+  status: 200,
+  duration: '105ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 15:12:03'
+}
+{
+  message: '::1 - - [03/Aug/2025:18:12:03 +0000] "GET /api/usuarios/ HTTP/1.1" 200 2569 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 15:12:03'
+}
+{
+  method: 'POST',
+  url: '/',
+  status: 201,
+  duration: '431ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 15:12:04'
+}
+{
+  message: '::1 - - [03/Aug/2025:18:12:04 +0000] "POST /api/usuarios/ HTTP/1.1" 201 274 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 15:12:04'
+}
+{
+  method: 'POST',
+  url: '/api/usuario/',
+  status: 404,
+  duration: '2ms',
+  ip: '::1',
+  userAgent: 'PostmanRuntime/7.45.0',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-08-03 15:15:52'
+}
+{
+  message: '::1 - - [03/Aug/2025:18:15:52 +0000] "POST /api/usuario/ HTTP/1.1" 404 69 "-" "PostmanRuntime/7.45.0"',
+  level: 'info',
+  timestamp: '2025-08-03 15:15:52'
+}
+{
+  method: 'GET',
+  url: '/',
+  status: 200,
+  duration: '107ms',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 15:16:36'
+}
+{
+  message: '::1 - - [03/Aug/2025:18:16:36 +0000] "GET /api/usuarios/ HTTP/1.1" 200 2561 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"',
+  level: 'info',
+  timestamp: '2025-08-03 15:16:36'
+}
+{
+  method: 'GET',
+  url: '/.well-known/appspecific/com.chrome.devtools.json',
+  status: 404,
+  duration: '1ms',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-08-03 15:16:46'
+}
+{
+  message: '::1 - - [03/Aug/2025:18:16:46 +0000] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 104 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"',
+  level: 'info',
+  timestamp: '2025-08-03 15:16:46'
+}
+{
+  method: 'POST',
+  url: '/',
+  status: 400,
+  duration: '63ms',
+  ip: '::1',
+  userAgent: 'PostmanRuntime/7.45.0',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-08-03 15:20:57'
+}
+{
+  message: '::1 - - [03/Aug/2025:18:20:57 +0000] "POST /api/usuarios/ HTTP/1.1" 400 177 "-" "PostmanRuntime/7.45.0"',
+  level: 'info',
+  timestamp: '2025-08-03 15:20:57'
+}
+{
+  error: "Expected ',' or '}' after property value in JSON at position 57 (line 5 column 3)",
+  stack: "SyntaxError: Expected ',' or '}' after property value in JSON at position 57 (line 5 column 3)\n" +
+    '    at JSON.parse (<anonymous>)\n' +
+    '    at parse (C:\\Users\\Administrator\\Desktop\\MCGA\\https-github.com-Ferchu2021-backend-node-api-main\\https-github.com-Ferchu2021-backend-node-api-main\\node_modules\\body-parser\\lib\\types\\json.js:92:19)\n' +
+    '    at C:\\Users\\Administrator\\Desktop\\MCGA\\https-github.com-Ferchu2021-backend-node-api-main\\https-github.com-Ferchu2021-backend-node-api-main\\node_modules\\body-parser\\lib\\read.js:128:18\n' +
+    '    at AsyncResource.runInAsyncScope (node:async_hooks:214:14)\n' +
+    '    at invokeCallback (C:\\Users\\Administrator\\Desktop\\MCGA\\https-github.com-Ferchu2021-backend-node-api-main\\https-github.com-Ferchu2021-backend-node-api-main\\node_modules\\raw-body\\index.js:238:16)\n' +
+    '    at done (C:\\Users\\Administrator\\Desktop\\MCGA\\https-github.com-Ferchu2021-backend-node-api-main\\https-github.com-Ferchu2021-backend-node-api-main\\node_modules\\raw-body\\index.js:227:7)\n' +
+    '    at IncomingMessage.onEnd (C:\\Users\\Administrator\\Desktop\\MCGA\\https-github.com-Ferchu2021-backend-node-api-main\\https-github.com-Ferchu2021-backend-node-api-main\\node_modules\\raw-body\\index.js:287:7)\n' +
+    '    at IncomingMessage.emit (node:events:507:28)\n' +
+    '    at endReadableNT (node:internal/streams/readable:1696:12)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)',
+  url: '/api/usuarios/',
+  method: 'POST',
+  ip: '::1',
+  userAgent: 'PostmanRuntime/7.45.0',
+  level: 'error',
+  message: 'Application Error',
+  timestamp: '2025-08-03 15:21:25'
+}
+{
+  error: "Expected ',' or '}' after property value in JSON at position 57 (line 5 column 3)",
+  stack: "SyntaxError: Expected ',' or '}' after property value in JSON at position 57 (line 5 column 3)\n" +
+    '    at JSON.parse (<anonymous>)\n' +
+    '    at parse (C:\\Users\\Administrator\\Desktop\\MCGA\\https-github.com-Ferchu2021-backend-node-api-main\\https-github.com-Ferchu2021-backend-node-api-main\\node_modules\\body-parser\\lib\\types\\json.js:92:19)\n' +
+    '    at C:\\Users\\Administrator\\Desktop\\MCGA\\https-github.com-Ferchu2021-backend-node-api-main\\https-github.com-Ferchu2021-backend-node-api-main\\node_modules\\body-parser\\lib\\read.js:128:18\n' +
+    '    at AsyncResource.runInAsyncScope (node:async_hooks:214:14)\n' +
+    '    at invokeCallback (C:\\Users\\Administrator\\Desktop\\MCGA\\https-github.com-Ferchu2021-backend-node-api-main\\https-github.com-Ferchu2021-backend-node-api-main\\node_modules\\raw-body\\index.js:238:16)\n' +
+    '    at done (C:\\Users\\Administrator\\Desktop\\MCGA\\https-github.com-Ferchu2021-backend-node-api-main\\https-github.com-Ferchu2021-backend-node-api-main\\node_modules\\raw-body\\index.js:227:7)\n' +
+    '    at IncomingMessage.onEnd (C:\\Users\\Administrator\\Desktop\\MCGA\\https-github.com-Ferchu2021-backend-node-api-main\\https-github.com-Ferchu2021-backend-node-api-main\\node_modules\\raw-body\\index.js:287:7)\n' +
+    '    at IncomingMessage.emit (node:events:507:28)\n' +
+    '    at endReadableNT (node:internal/streams/readable:1696:12)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)',
+  url: '/api/usuarios/',
+  method: 'POST',
+  level: 'error',
+  message: 'Unhandled Error:',
+  timestamp: '2025-08-03 15:21:25'
+}
+{
+  error: "Expected ',' or '}' after property value in JSON at position 57 (line 5 column 3)",
+  stack: "SyntaxError: Expected ',' or '}' after property value in JSON at position 57 (line 5 column 3)\n" +
+    '    at JSON.parse (<anonymous>)\n' +
+    '    at parse (C:\\Users\\Administrator\\Desktop\\MCGA\\https-github.com-Ferchu2021-backend-node-api-main\\https-github.com-Ferchu2021-backend-node-api-main\\node_modules\\body-parser\\lib\\types\\json.js:92:19)\n' +
+    '    at C:\\Users\\Administrator\\Desktop\\MCGA\\https-github.com-Ferchu2021-backend-node-api-main\\https-github.com-Ferchu2021-backend-node-api-main\\node_modules\\body-parser\\lib\\read.js:128:18\n' +
+    '    at AsyncResource.runInAsyncScope (node:async_hooks:214:14)\n' +
+    '    at invokeCallback (C:\\Users\\Administrator\\Desktop\\MCGA\\https-github.com-Ferchu2021-backend-node-api-main\\https-github.com-Ferchu2021-backend-node-api-main\\node_modules\\raw-body\\index.js:238:16)\n' +
+    '    at done (C:\\Users\\Administrator\\Desktop\\MCGA\\https-github.com-Ferchu2021-backend-node-api-main\\https-github.com-Ferchu2021-backend-node-api-main\\node_modules\\raw-body\\index.js:227:7)\n' +
+    '    at IncomingMessage.onEnd (C:\\Users\\Administrator\\Desktop\\MCGA\\https-github.com-Ferchu2021-backend-node-api-main\\https-github.com-Ferchu2021-backend-node-api-main\\node_modules\\raw-body\\index.js:287:7)\n' +
+    '    at IncomingMessage.emit (node:events:507:28)\n' +
+    '    at endReadableNT (node:internal/streams/readable:1696:12)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)',
+  url: '/api/usuarios/',
+  method: 'POST',
+  ip: '::1',
+  userAgent: 'PostmanRuntime/7.45.0',
+  level: 'error',
+  message: 'Application Error',
+  timestamp: '2025-08-03 15:21:41'
+}
+{
+  error: "Expected ',' or '}' after property value in JSON at position 57 (line 5 column 3)",
+  stack: "SyntaxError: Expected ',' or '}' after property value in JSON at position 57 (line 5 column 3)\n" +
+    '    at JSON.parse (<anonymous>)\n' +
+    '    at parse (C:\\Users\\Administrator\\Desktop\\MCGA\\https-github.com-Ferchu2021-backend-node-api-main\\https-github.com-Ferchu2021-backend-node-api-main\\node_modules\\body-parser\\lib\\types\\json.js:92:19)\n' +
+    '    at C:\\Users\\Administrator\\Desktop\\MCGA\\https-github.com-Ferchu2021-backend-node-api-main\\https-github.com-Ferchu2021-backend-node-api-main\\node_modules\\body-parser\\lib\\read.js:128:18\n' +
+    '    at AsyncResource.runInAsyncScope (node:async_hooks:214:14)\n' +
+    '    at invokeCallback (C:\\Users\\Administrator\\Desktop\\MCGA\\https-github.com-Ferchu2021-backend-node-api-main\\https-github.com-Ferchu2021-backend-node-api-main\\node_modules\\raw-body\\index.js:238:16)\n' +
+    '    at done (C:\\Users\\Administrator\\Desktop\\MCGA\\https-github.com-Ferchu2021-backend-node-api-main\\https-github.com-Ferchu2021-backend-node-api-main\\node_modules\\raw-body\\index.js:227:7)\n' +
+    '    at IncomingMessage.onEnd (C:\\Users\\Administrator\\Desktop\\MCGA\\https-github.com-Ferchu2021-backend-node-api-main\\https-github.com-Ferchu2021-backend-node-api-main\\node_modules\\raw-body\\index.js:287:7)\n' +
+    '    at IncomingMessage.emit (node:events:507:28)\n' +
+    '    at endReadableNT (node:internal/streams/readable:1696:12)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)',
+  url: '/api/usuarios/',
+  method: 'POST',
+  level: 'error',
+  message: 'Unhandled Error:',
+  timestamp: '2025-08-03 15:21:41'
+}
+{
+  error: "Expected ',' or '}' after property value in JSON at position 57 (line 5 column 3)",
+  stack: "SyntaxError: Expected ',' or '}' after property value in JSON at position 57 (line 5 column 3)\n" +
+    '    at JSON.parse (<anonymous>)\n' +
+    '    at parse (C:\\Users\\Administrator\\Desktop\\MCGA\\https-github.com-Ferchu2021-backend-node-api-main\\https-github.com-Ferchu2021-backend-node-api-main\\node_modules\\body-parser\\lib\\types\\json.js:92:19)\n' +
+    '    at C:\\Users\\Administrator\\Desktop\\MCGA\\https-github.com-Ferchu2021-backend-node-api-main\\https-github.com-Ferchu2021-backend-node-api-main\\node_modules\\body-parser\\lib\\read.js:128:18\n' +
+    '    at AsyncResource.runInAsyncScope (node:async_hooks:214:14)\n' +
+    '    at invokeCallback (C:\\Users\\Administrator\\Desktop\\MCGA\\https-github.com-Ferchu2021-backend-node-api-main\\https-github.com-Ferchu2021-backend-node-api-main\\node_modules\\raw-body\\index.js:238:16)\n' +
+    '    at done (C:\\Users\\Administrator\\Desktop\\MCGA\\https-github.com-Ferchu2021-backend-node-api-main\\https-github.com-Ferchu2021-backend-node-api-main\\node_modules\\raw-body\\index.js:227:7)\n' +
+    '    at IncomingMessage.onEnd (C:\\Users\\Administrator\\Desktop\\MCGA\\https-github.com-Ferchu2021-backend-node-api-main\\https-github.com-Ferchu2021-backend-node-api-main\\node_modules\\raw-body\\index.js:287:7)\n' +
+    '    at IncomingMessage.emit (node:events:507:28)\n' +
+    '    at endReadableNT (node:internal/streams/readable:1696:12)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)',
+  url: '/api/usuarios/',
+  method: 'POST',
+  ip: '::1',
+  userAgent: 'PostmanRuntime/7.45.0',
+  level: 'error',
+  message: 'Application Error',
+  timestamp: '2025-08-03 15:21:46'
+}
+{
+  error: "Expected ',' or '}' after property value in JSON at position 57 (line 5 column 3)",
+  stack: "SyntaxError: Expected ',' or '}' after property value in JSON at position 57 (line 5 column 3)\n" +
+    '    at JSON.parse (<anonymous>)\n' +
+    '    at parse (C:\\Users\\Administrator\\Desktop\\MCGA\\https-github.com-Ferchu2021-backend-node-api-main\\https-github.com-Ferchu2021-backend-node-api-main\\node_modules\\body-parser\\lib\\types\\json.js:92:19)\n' +
+    '    at C:\\Users\\Administrator\\Desktop\\MCGA\\https-github.com-Ferchu2021-backend-node-api-main\\https-github.com-Ferchu2021-backend-node-api-main\\node_modules\\body-parser\\lib\\read.js:128:18\n' +
+    '    at AsyncResource.runInAsyncScope (node:async_hooks:214:14)\n' +
+    '    at invokeCallback (C:\\Users\\Administrator\\Desktop\\MCGA\\https-github.com-Ferchu2021-backend-node-api-main\\https-github.com-Ferchu2021-backend-node-api-main\\node_modules\\raw-body\\index.js:238:16)\n' +
+    '    at done (C:\\Users\\Administrator\\Desktop\\MCGA\\https-github.com-Ferchu2021-backend-node-api-main\\https-github.com-Ferchu2021-backend-node-api-main\\node_modules\\raw-body\\index.js:227:7)\n' +
+    '    at IncomingMessage.onEnd (C:\\Users\\Administrator\\Desktop\\MCGA\\https-github.com-Ferchu2021-backend-node-api-main\\https-github.com-Ferchu2021-backend-node-api-main\\node_modules\\raw-body\\index.js:287:7)\n' +
+    '    at IncomingMessage.emit (node:events:507:28)\n' +
+    '    at endReadableNT (node:internal/streams/readable:1696:12)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)',
+  url: '/api/usuarios/',
+  method: 'POST',
+  level: 'error',
+  message: 'Unhandled Error:',
+  timestamp: '2025-08-03 15:21:46'
+}
+{
+  method: 'POST',
+  url: '/',
+  status: 409,
+  duration: '48ms',
+  ip: '::1',
+  userAgent: 'PostmanRuntime/7.45.0',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-08-03 15:22:44'
+}
+{
+  message: '::1 - - [03/Aug/2025:18:22:44 +0000] "POST /api/usuarios/ HTTP/1.1" 409 58 "-" "PostmanRuntime/7.45.0"',
+  level: 'info',
+  timestamp: '2025-08-03 15:22:44'
+}
+{
+  method: 'POST',
+  url: '/',
+  status: 400,
+  duration: '54ms',
+  ip: '::1',
+  userAgent: 'PostmanRuntime/7.45.0',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-08-03 15:25:47'
+}
+{
+  message: '::1 - - [03/Aug/2025:18:25:47 +0000] "POST /api/usuarios/ HTTP/1.1" 400 177 "-" "PostmanRuntime/7.45.0"',
+  level: 'info',
+  timestamp: '2025-08-03 15:25:47'
+}
+{
+  method: 'POST',
+  url: '/',
+  status: 400,
+  duration: '54ms',
+  ip: '::1',
+  userAgent: 'PostmanRuntime/7.45.0',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-08-03 15:26:14'
+}
+{
+  message: '::1 - - [03/Aug/2025:18:26:14 +0000] "POST /api/usuarios/ HTTP/1.1" 400 177 "-" "PostmanRuntime/7.45.0"',
+  level: 'info',
+  timestamp: '2025-08-03 15:26:14'
+}
+{
+  method: 'GET',
+  url: '/health',
+  status: 200,
+  duration: '3ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 15:39:20'
+}
+{
+  message: '::1 - - [03/Aug/2025:18:39:20 +0000] "GET /health HTTP/1.1" 200 215 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 15:39:20'
+}
+{
+  method: 'GET',
+  url: '/',
+  status: 200,
+  duration: '106ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 15:39:20'
+}
+{
+  message: '::1 - - [03/Aug/2025:18:39:20 +0000] "GET /api/usuarios/ HTTP/1.1" 200 2561 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 15:39:20'
+}
+{
+  method: 'POST',
+  url: '/',
+  status: 201,
+  duration: '374ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 15:39:21'
+}
+{
+  message: '::1 - - [03/Aug/2025:18:39:21 +0000] "POST /api/usuarios/ HTTP/1.1" 201 285 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 15:39:21'
+}
+{
+  method: 'POST',
+  url: '/',
+  status: 400,
+  duration: '53ms',
+  ip: '::1',
+  userAgent: 'PostmanRuntime/7.45.0',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-08-03 15:48:34'
+}
+{
+  message: '::1 - - [03/Aug/2025:18:48:34 +0000] "POST /api/usuarios/ HTTP/1.1" 400 177 "-" "PostmanRuntime/7.45.0"',
+  level: 'info',
+  timestamp: '2025-08-03 15:48:34'
+}
+{
+  method: 'POST',
+  url: '/',
+  status: 409,
+  duration: '708ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-08-03 16:02:04'
+}
+{
+  message: '::1 - - [03/Aug/2025:19:02:04 +0000] "POST /api/usuarios/ HTTP/1.1" 409 58 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 16:02:04'
+}
+{
+  method: 'POST',
+  url: '/',
+  status: 409,
+  duration: '363ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-08-03 16:02:04'
+}
+{
+  message: '::1 - - [03/Aug/2025:19:02:04 +0000] "POST /api/usuarios/ HTTP/1.1" 409 58 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 16:02:04'
+}
+{
+  method: 'POST',
+  url: '/',
+  status: 409,
+  duration: '363ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-08-03 16:02:05'
+}
+{
+  message: '::1 - - [03/Aug/2025:19:02:05 +0000] "POST /api/usuarios/ HTTP/1.1" 409 58 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 16:02:05'
+}
+{
+  method: 'POST',
+  url: '/',
+  status: 409,
+  duration: '371ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-08-03 16:02:05'
+}
+{
+  message: '::1 - - [03/Aug/2025:19:02:05 +0000] "POST /api/usuarios/ HTTP/1.1" 409 58 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 16:02:05'
+}
+{
+  method: 'POST',
+  url: '/',
+  status: 409,
+  duration: '380ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-08-03 16:04:37'
+}
+{
+  message: '::1 - - [03/Aug/2025:19:04:37 +0000] "POST /api/usuarios/ HTTP/1.1" 409 58 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 16:04:37'
+}
+{
+  method: 'POST',
+  url: '/',
+  status: 409,
+  duration: '393ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-08-03 16:05:50'
+}
+{
+  message: '::1 - - [03/Aug/2025:19:05:50 +0000] "POST /api/usuarios/ HTTP/1.1" 409 58 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 16:05:50'
+}
+{
+  method: 'POST',
+  url: '/',
+  status: 409,
+  duration: '377ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-08-03 16:07:02'
+}
+{
+  message: '::1 - - [03/Aug/2025:19:07:02 +0000] "POST /api/usuarios/ HTTP/1.1" 409 58 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 16:07:02'
+}
+{
+  method: 'POST',
+  url: '/',
+  status: 409,
+  duration: '363ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-08-03 16:08:19'
+}
+{
+  message: '::1 - - [03/Aug/2025:19:08:19 +0000] "POST /api/usuarios/ HTTP/1.1" 409 58 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 16:08:19'
+}
+{
+  method: 'POST',
+  url: '/',
+  status: 409,
+  duration: '718ms',
+  ip: '::1',
+  userAgent: 'PostmanRuntime/7.45.0',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-08-03 16:18:13'
+}
+{
+  message: '::1 - - [03/Aug/2025:19:18:13 +0000] "POST /api/usuarios/ HTTP/1.1" 409 58 "-" "PostmanRuntime/7.45.0"',
+  level: 'info',
+  timestamp: '2025-08-03 16:18:13'
+}
+{
+  method: 'POST',
+  url: '/',
+  status: 409,
+  duration: '782ms',
+  ip: '::1',
+  userAgent: 'PostmanRuntime/7.45.0',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-08-03 16:18:26'
+}
+{
+  message: '::1 - - [03/Aug/2025:19:18:26 +0000] "POST /api/usuarios/ HTTP/1.1" 409 58 "-" "PostmanRuntime/7.45.0"',
+  level: 'info',
+  timestamp: '2025-08-03 16:18:26'
+}
+{
+  method: 'GET',
+  url: '/',
+  status: 200,
+  duration: '468ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 18:33:12'
+}
+{
+  message: '::1 - - [03/Aug/2025:21:33:12 +0000] "GET /api/usuarios/ HTTP/1.1" 200 2539 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 18:33:12'
+}
+{
+  method: 'POST',
+  url: '/',
+  status: 409,
+  duration: '679ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-08-03 18:33:13'
+}
+{
+  message: '::1 - - [03/Aug/2025:21:33:13 +0000] "POST /api/usuarios/ HTTP/1.1" 409 58 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-03 18:33:13'
+}
+{
+  method: 'GET',
+  url: '/',
+  status: 200,
+  duration: '2ms',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 18:41:02'
+}
+{
+  message: '::1 - - [03/Aug/2025:21:41:02 +0000] "GET / HTTP/1.1" 200 223 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"',
+  level: 'info',
+  timestamp: '2025-08-03 18:41:02'
+}
+{
+  method: 'GET',
+  url: '/',
+  status: 200,
+  duration: '1ms',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 18:41:03'
+}
+{
+  message: '::1 - - [03/Aug/2025:21:41:03 +0000] "GET / HTTP/1.1" 200 223 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"',
+  level: 'info',
+  timestamp: '2025-08-03 18:41:03'
+}
+{
+  method: 'GET',
+  url: '/',
+  status: 200,
+  duration: '2ms',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 18:41:04'
+}
+{
+  message: '::1 - - [03/Aug/2025:21:41:04 +0000] "GET / HTTP/1.1" 200 223 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"',
+  level: 'info',
+  timestamp: '2025-08-03 18:41:04'
+}
+{
+  method: 'GET',
+  url: '/',
+  status: 200,
+  duration: '1ms',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 18:41:05'
+}
+{
+  message: '::1 - - [03/Aug/2025:21:41:05 +0000] "GET / HTTP/1.1" 200 223 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"',
+  level: 'info',
+  timestamp: '2025-08-03 18:41:05'
+}
+{
+  method: 'GET',
+  url: '/',
+  status: 200,
+  duration: '1ms',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-03 18:41:06'
+}
+{
+  message: '::1 - - [03/Aug/2025:21:41:06 +0000] "GET / HTTP/1.1" 200 223 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"',
+  level: 'info',
+  timestamp: '2025-08-03 18:41:06'
+}
