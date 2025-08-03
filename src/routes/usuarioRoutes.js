@@ -1,25 +1,24 @@
 const express = require('express');
+const authMiddleware = require('../middleware/authMiddleware');
 const {
   getUsuarios,
   crearUsuario,
   getUsuarioById,
   actualizarUsuario,
   eliminarUsuario,
-  buscarUsuarios,
-  getEstadisticasUsuarios
+  loginUsuario
 } = require('../controllers/usuarioController');
 
 const router = express.Router();
 
-// Rutas principales de usuarios
-router.get('/', getUsuarios);                    // GET /api/usuarios - Listar usuarios con paginación
-router.post('/', crearUsuario);                  // POST /api/usuarios - Crear nuevo usuario
-router.get('/buscar', buscarUsuarios);           // GET /api/usuarios/buscar - Buscar usuarios
-router.get('/estadisticas', getEstadisticasUsuarios); // GET /api/usuarios/estadisticas - Estadísticas
+// Rutas públicas
+router.get('/', getUsuarios);                    // GET /api/usuarios - Listar usuarios (público)
+router.post('/login', loginUsuario);             // POST /api/usuarios/login - Login
 
-// Rutas con parámetros
-router.get('/:id', getUsuarioById);              // GET /api/usuarios/:id - Obtener usuario por ID
-router.put('/:id', actualizarUsuario);           // PUT /api/usuarios/:id - Actualizar usuario
-router.delete('/:id', eliminarUsuario);          // DELETE /api/usuarios/:id - Eliminar usuario
+// Rutas privadas (requieren autenticación)
+router.post('/', authMiddleware, crearUsuario);                  // POST /api/usuarios - Crear nuevo usuario
+router.get('/:id', authMiddleware, getUsuarioById);              // GET /api/usuarios/:id - Obtener usuario por ID
+router.put('/:id', authMiddleware, actualizarUsuario);           // PUT /api/usuarios/:id - Actualizar usuario
+router.delete('/:id', authMiddleware, eliminarUsuario);          // DELETE /api/usuarios/:id - Eliminar usuario
 
 module.exports = router; 

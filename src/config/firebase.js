@@ -14,6 +14,10 @@ const firebaseApp = admin.initializeApp({
 const adminAuth = admin.auth(firebaseApp);
 const adminDb = admin.firestore(firebaseApp);
 
-export default firebaseApp;
+module.exports = {
+  firebaseApp,
+  adminAuth,
+  adminDb
+};
 
 

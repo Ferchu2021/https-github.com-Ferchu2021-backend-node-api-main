@@ -8,6 +8,7 @@
     "demo": "node demo_api.js",
     "test": "node test_api.js",
     "test-demo": "node test_demo.js",
+    "test-examen": "node test_examen_final.js",
     "create-admin": "node create_admin.js",
     "setup-env": "node setup_env.js",
     "setup-mongodb": "node setup_mongodb.js",
