@@ -40,8 +40,6 @@
     "types": ["node"],
     "allowSyntheticDefaultImports": true,
     "noFallthroughCasesInSwitch": true,
-    "noUncheckedIndexedAccess": true,
-    "exactOptionalPropertyTypes": true
   },
   "include": [
     "src/**/*",
