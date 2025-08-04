@@ -1,59 +1,29 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useForm } from 'react-hook-form';
-import { joiResolver } from '@hookform/resolvers/joi';
-import Joi from 'joi';
-import axios from 'axios';
-
-const loginSchema = Joi.object({
-  email: Joi.string()
-    .email({ tlds: { allow: false } })
-    .required()
-    .messages({
-      'string.email': 'El email debe tener un formato válido',
-      'any.required': 'El email es requerido'
-    }),
-  contrasena: Joi.string()
-    .min(6)
-    .required()
-    .messages({
-      'string.min': 'La contraseña debe tener al menos 6 caracteres',
-      'any.required': 'La contraseña es requerida'
-    })
-});
 
 const Login = ({ onLogin }) => {
   const navigate = useNavigate();
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
 
-  const {
-    register,
-    handleSubmit,
-    formState: { errors }
-  } = useForm({
-    resolver: joiResolver(loginSchema)
-  });
-
-  const onSubmit = async (data) => {
+  const handleSubmit = async (e) => {
+    e.preventDefault();
     setLoading(true);
     setError('');
 
-    try {
-      const response = await axios.post('http://localhost:3001/api/usuarios/login', {
-        email: data.email,
-        contrasena: data.contrasena
-      });
-
-      if (response.data.success) {
-        onLogin(response.data.token, response.data.usuario);
-        navigate('/dashboard');
-      }
-    } catch (err) {
-      setError(err.response?.data?.mensaje || 'Error al iniciar sesión');
-    } finally {
-      setLoading(false);
-    }
+    // Simular login exitoso
+    setTimeout(() => {
+      const mockUser = {
+        _id: '1',
+        nombre: 'Admin',
+        email: 'admin@techstore.com',
+        activo: true
+      };
+      const mockToken = 'mock-jwt-token';
+      
+      onLogin(mockToken, mockUser);
+      navigate('/dashboard');
+    }, 1000);
   };
 
   return (
@@ -72,7 +42,7 @@ const Login = ({ onLogin }) => {
           </div>
         )}
 
-        <form onSubmit={handleSubmit(onSubmit)}>
+        <form onSubmit={handleSubmit}>
           <div className="form-group">
             <label htmlFor="email" className="form-label">
               📧 Email
@@ -80,13 +50,11 @@ const Login = ({ onLogin }) => {
             <input
               type="email"
               id="email"
-              className={`form-control ${errors.email ? 'error' : ''}`}
+              className="form-control"
               placeholder="tu@email.com"
-              {...register('email')}
+              defaultValue="admin@techstore.com"
+              required
             />
-            {errors.email && (
-              <div className="form-error">{errors.email.message}</div>
-            )}
           </div>
 
           <div className="form-group">
@@ -96,13 +64,11 @@ const Login = ({ onLogin }) => {
             <input
               type="password"
               id="contrasena"
-              className={`form-control ${errors.contrasena ? 'error' : ''}`}
+              className="form-control"
               placeholder="Tu contraseña"
-              {...register('contrasena')}
+              defaultValue="admin123"
+              required
             />
-            {errors.contrasena && (
-              <div className="form-error">{errors.contrasena.message}</div>
-            )}
           </div>
 
           <button
@@ -135,9 +101,6 @@ const Login = ({ onLogin }) => {
           textAlign: 'center'
         }}>
           <p style={{ color: '#666', marginBottom: '1rem' }}>
-            ¿No tienes una cuenta? Contacta al administrador
-          </p>
-          <p style={{ fontSize: '0.875rem', color: '#999' }}>
             💡 Credenciales de prueba: admin@techstore.com / admin123
           </p>
         </div>

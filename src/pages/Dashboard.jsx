@@ -1,51 +1,6 @@
-import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import axios from 'axios';
 
 const Dashboard = ({ user }) => {
-  const [stats, setStats] = useState({
-    totalUsuarios: 0,
-    totalProductos: 0,
-    ventasMes: 0
-  });
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState('');
-
-  useEffect(() => {
-    const fetchStats = async () => {
-      try {
-        const response = await axios.get('http://localhost:3001/api/usuarios');
-        setStats({
-          totalUsuarios: response.data.usuarios?.length || 0,
-          totalProductos: 500, // Simulado
-          ventasMes: 125000 // Simulado
-        });
-        setLoading(false);
-      } catch (err) {
-        setError('Error al cargar estadísticas');
-        setLoading(false);
-      }
-    };
-
-    fetchStats();
-  }, []);
-
-  if (loading) {
-    return (
-      <div className="loading">
-        <div className="spinner"></div>
-      </div>
-    );
-  }
-
-  if (error) {
-    return (
-      <div className="alert alert-error">
-        {error}
-      </div>
-    );
-  }
-
   return (
     <div className="fade-in">
       {/* Header del Dashboard */}
@@ -66,7 +21,7 @@ const Dashboard = ({ user }) => {
         <div className="card" style={{ textAlign: 'center' }}>
           <div style={{ fontSize: '3rem', marginBottom: '0.5rem' }}>👥</div>
           <h3 style={{ fontSize: '2rem', color: '#667eea', marginBottom: '0.5rem' }}>
-            {stats.totalUsuarios}
+            10
           </h3>
           <p>Clientes Registrados</p>
         </div>
@@ -74,7 +29,7 @@ const Dashboard = ({ user }) => {
         <div className="card" style={{ textAlign: 'center' }}>
           <div style={{ fontSize: '3rem', marginBottom: '0.5rem' }}>📦</div>
           <h3 style={{ fontSize: '2rem', color: '#667eea', marginBottom: '0.5rem' }}>
-            {stats.totalProductos}
+            500
           </h3>
           <p>Productos Disponibles</p>
         </div>
@@ -82,7 +37,7 @@ const Dashboard = ({ user }) => {
         <div className="card" style={{ textAlign: 'center' }}>
           <div style={{ fontSize: '3rem', marginBottom: '0.5rem' }}>💰</div>
           <h3 style={{ fontSize: '2rem', color: '#667eea', marginBottom: '0.5rem' }}>
-            ${stats.ventasMes.toLocaleString()}
+            $125,000
           </h3>
           <p>Ventas del Mes</p>
         </div>

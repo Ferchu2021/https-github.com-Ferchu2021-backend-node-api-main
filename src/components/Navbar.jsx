@@ -1,8 +1,6 @@
-import { Link, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Navbar = ({ isAuthenticated, user, onLogout }) => {
-  const location = useLocation();
-
   return (
     <nav className="navbar">
       <div className="navbar-container">
@@ -12,10 +10,7 @@ const Navbar = ({ isAuthenticated, user, onLogout }) => {
         
         <ul className="navbar-nav">
           <li>
-            <Link 
-              to="/" 
-              className={`nav-link ${location.pathname === '/' ? 'active' : ''}`}
-            >
+            <Link to="/" className="nav-link">
               Inicio
             </Link>
           </li>
@@ -23,18 +18,12 @@ const Navbar = ({ isAuthenticated, user, onLogout }) => {
           {isAuthenticated ? (
             <>
               <li>
-                <Link 
-                  to="/dashboard" 
-                  className={`nav-link ${location.pathname === '/dashboard' ? 'active' : ''}`}
-                >
+                <Link to="/dashboard" className="nav-link">
                   Dashboard
                 </Link>
               </li>
               <li>
-                <Link 
-                  to="/productos" 
-                  className={`nav-link ${location.pathname === '/productos' ? 'active' : ''}`}
-                >
+                <Link to="/productos" className="nav-link">
                   Productos
                 </Link>
               </li>
@@ -55,10 +44,7 @@ const Navbar = ({ isAuthenticated, user, onLogout }) => {
             </>
           ) : (
             <li>
-              <Link 
-                to="/login" 
-                className={`nav-link ${location.pathname === '/login' ? 'active' : ''}`}
-              >
+              <Link to="/login" className="nav-link">
                 🔐 Iniciar Sesión
               </Link>
             </li>
