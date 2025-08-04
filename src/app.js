@@ -60,6 +60,7 @@ app.use('/api/usuarios', usuariosRoutes);
 app.use('/api/firebase', firebaseRoutes);
 app.use('/api/productos', productosRoutes);
 app.use('/api/products', productosRoutes); // Alias en inglés para compatibilidad
+app.use('/api/producto', productosRoutes); // Alias singular para compatibilidad
 
 // Ruta de prueba
 app.get('/', (req, res) => {
@@ -73,7 +74,8 @@ app.get('/', (req, res) => {
       data: '/api/data',
       firebase: '/api/firebase',
       productos: '/api/productos',
-      products: '/api/products'
+      products: '/api/products',
+      producto: '/api/producto'
     }
   });
 });

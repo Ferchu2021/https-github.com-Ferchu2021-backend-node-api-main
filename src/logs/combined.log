@@ -3718,3 +3718,123 @@
     '    at NativeConnection.openUri (C:\\Users\\Administrator\\Desktop\\MCGA\\https-github.com-Ferchu2021-backend-node-api-main\\https-github.com-Ferchu2021-backend-node-api-main\\node_modules\\mongoose\\lib\\connection.js:791:11)',
   timestamp: '2025-08-04 14:38:06'
 }
+{
+  port: 3001,
+  environment: 'development',
+  mongoUri: 'Configurado',
+  level: 'info',
+  message: 'Servidor iniciado correctamente',
+  timestamp: '2025-08-04 15:22:38'
+}
+{
+  method: 'POST',
+  url: '/auth/login',
+  status: 404,
+  duration: '15ms',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-08-04 15:39:22'
+}
+{
+  message: '::1 - - [04/Aug/2025:18:39:22 +0000] "POST /auth/login HTTP/1.1" 404 67 "http://localhost:5173/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"',
+  level: 'info',
+  timestamp: '2025-08-04 15:39:22'
+}
+{
+  method: 'POST',
+  url: '/usuario/',
+  status: 404,
+  duration: '2ms',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-08-04 15:42:48'
+}
+{
+  message: '::1 - - [04/Aug/2025:18:42:48 +0000] "POST /usuario/ HTTP/1.1" 404 65 "http://localhost:5173/users" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"',
+  level: 'info',
+  timestamp: '2025-08-04 15:42:48'
+}
+{
+  method: 'POST',
+  url: '/producto/',
+  status: 404,
+  duration: '2ms',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-08-04 15:43:37'
+}
+{
+  message: '::1 - - [04/Aug/2025:18:43:37 +0000] "POST /producto/ HTTP/1.1" 404 66 "http://localhost:5173/products" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"',
+  level: 'info',
+  timestamp: '2025-08-04 15:43:37'
+}
+{
+  method: 'POST',
+  url: '/api/producto/',
+  status: 404,
+  duration: '14ms',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-08-04 15:56:25'
+}
+{
+  message: '::1 - - [04/Aug/2025:18:56:25 +0000] "POST /api/producto/ HTTP/1.1" 404 70 "http://localhost:5173/products" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"',
+  level: 'info',
+  timestamp: '2025-08-04 15:56:25'
+}
+{
+  method: 'POST',
+  url: '/',
+  status: 401,
+  duration: '31ms',
+  ip: '::1',
+  userAgent: 'PostmanRuntime/7.45.0',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-08-04 18:24:34'
+}
+{
+  message: '::1 - - [04/Aug/2025:21:24:34 +0000] "POST /api/usuarios/ HTTP/1.1" 401 45 "-" "PostmanRuntime/7.45.0"',
+  level: 'info',
+  timestamp: '2025-08-04 18:24:34'
+}
+{
+  method: 'POST',
+  url: '/',
+  status: 401,
+  duration: '17ms',
+  ip: '::1',
+  userAgent: 'PostmanRuntime/7.45.0',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-08-04 18:25:09'
+}
+{
+  message: '::1 - - [04/Aug/2025:21:25:09 +0000] "POST /api/usuarios/ HTTP/1.1" 401 45 "-" "PostmanRuntime/7.45.0"',
+  level: 'info',
+  timestamp: '2025-08-04 18:25:09'
+}
+{
+  method: 'POST',
+  url: '/api/producto/',
+  status: 404,
+  duration: '3ms',
+  ip: '::1',
+  userAgent: 'PostmanRuntime/7.45.0',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-08-04 18:25:28'
+}
+{
+  message: '::1 - - [04/Aug/2025:21:25:28 +0000] "POST /api/producto/ HTTP/1.1" 404 70 "-" "PostmanRuntime/7.45.0"',
+  level: 'info',
+  timestamp: '2025-08-04 18:25:28'
+}

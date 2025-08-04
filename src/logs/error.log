@@ -1128,3 +1128,80 @@
     '    at NativeConnection.openUri (C:\\Users\\Administrator\\Desktop\\MCGA\\https-github.com-Ferchu2021-backend-node-api-main\\https-github.com-Ferchu2021-backend-node-api-main\\node_modules\\mongoose\\lib\\connection.js:791:11)',
   timestamp: '2025-08-04 14:38:06'
 }
+{
+  method: 'POST',
+  url: '/auth/login',
+  status: 404,
+  duration: '15ms',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-08-04 15:39:22'
+}
+{
+  method: 'POST',
+  url: '/usuario/',
+  status: 404,
+  duration: '2ms',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-08-04 15:42:48'
+}
+{
+  method: 'POST',
+  url: '/producto/',
+  status: 404,
+  duration: '2ms',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-08-04 15:43:37'
+}
+{
+  method: 'POST',
+  url: '/api/producto/',
+  status: 404,
+  duration: '14ms',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-08-04 15:56:25'
+}
+{
+  method: 'POST',
+  url: '/',
+  status: 401,
+  duration: '31ms',
+  ip: '::1',
+  userAgent: 'PostmanRuntime/7.45.0',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-08-04 18:24:34'
+}
+{
+  method: 'POST',
+  url: '/',
+  status: 401,
+  duration: '17ms',
+  ip: '::1',
+  userAgent: 'PostmanRuntime/7.45.0',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-08-04 18:25:09'
+}
+{
+  method: 'POST',
+  url: '/api/producto/',
+  status: 404,
+  duration: '3ms',
+  ip: '::1',
+  userAgent: 'PostmanRuntime/7.45.0',
+  level: 'error',
+  message: 'HTTP Request Error',
+  timestamp: '2025-08-04 18:25:28'
+}
