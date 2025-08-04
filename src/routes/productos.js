@@ -4,9 +4,12 @@ const router = express.Router();
 // Obtener todos los productos
 router.get('/', (req, res) => {
   try {
+    console.log('GET /api/products - Endpoint llamado');
+    
     res.status(200).json({
       success: true,
       mensaje: 'Lista de productos',
+      timestamp: new Date().toISOString(),
       productos: [
         {
           id: 1,
@@ -27,10 +30,12 @@ router.get('/', (req, res) => {
       ]
     });
   } catch (error) {
+    console.error('Error en GET /api/products:', error);
     res.status(500).json({
       success: false,
       mensaje: 'Error al obtener productos',
-      error: error.message
+      error: error.message,
+      timestamp: new Date().toISOString()
     });
   }
 });
