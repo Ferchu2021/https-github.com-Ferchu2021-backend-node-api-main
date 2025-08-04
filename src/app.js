@@ -15,6 +15,7 @@ const authRoutes = require("./routes/auth");
 const dataRoutes = require("./routes/data");
 const usuariosRoutes = require('./routes/usuarioRoutes');
 const firebaseRoutes = require('./routes/firebase');
+const productosRoutes = require('./routes/productos');
 
 const app = express();
 
@@ -32,10 +33,14 @@ app.use(helmet({
 
 // CORS configurado
 app.use(cors({
-  origin: process.env.FRONTEND_URL || "*",
+  origin: [
+    'https://frontend-techstore.vercel.app',
+    'http://localhost:5173',
+    'http://localhost:3000'
+  ],
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-  allowedHeaders: ['Content-Type', 'Authorization']
+  allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With']
 }));
 
 // Middlewares de parsing
@@ -59,6 +64,7 @@ app.use("/api/auth", authRoutes);
 app.use("/api/data", dataRoutes);
 app.use('/api/usuarios', usuariosRoutes);
 app.use('/api/firebase', firebaseRoutes);
+app.use('/api/productos', productosRoutes);
 
 // Ruta de prueba
 app.get('/', (req, res) => {
@@ -70,7 +76,8 @@ app.get('/', (req, res) => {
       auth: '/api/auth',
       usuarios: '/api/usuarios',
       data: '/api/data',
-      firebase: '/api/firebase'
+      firebase: '/api/firebase',
+      productos: '/api/productos'
     }
   });
 });
