@@ -4,7 +4,7 @@ const router = express.Router();
 // Obtener todos los productos
 router.get('/', (req, res) => {
   try {
-    console.log('GET /api/products - Endpoint llamado');
+    console.log('GET /api/producto - Endpoint llamado');
     
     res.status(200).json({
       success: true,
@@ -43,6 +43,9 @@ router.get('/', (req, res) => {
 // Crear un nuevo producto
 router.post('/', (req, res) => {
   try {
+    console.log('POST /api/producto - Endpoint llamado');
+    console.log('Body recibido:', req.body);
+    
     const { nombre, precio, descripcion, categoria, stock } = req.body;
     
     res.status(201).json({

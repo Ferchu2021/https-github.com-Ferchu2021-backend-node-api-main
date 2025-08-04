@@ -78,6 +78,7 @@ app.use('/api/firebase', firebaseRoutes);
 app.use('/api/productos', productosRoutes);
 app.use('/api/products', productosRoutes); // Alias en inglés para compatibilidad
 app.use('/api/producto', productosRoutes); // Alias singular para compatibilidad
+console.log('✅ Ruta /api/producto registrada');
 
 // Ruta de prueba
 app.get('/', (req, res) => {
