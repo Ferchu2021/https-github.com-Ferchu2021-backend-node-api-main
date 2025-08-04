@@ -3447,3 +3447,19 @@
   message: 'Servidor iniciado correctamente',
   timestamp: '2025-08-03 23:03:24'
 }
+{
+  port: 3001,
+  environment: 'development',
+  mongoUri: 'Configurado',
+  level: 'info',
+  message: 'Servidor iniciado correctamente',
+  timestamp: '2025-08-04 02:57:29'
+}
+{
+  port: 3001,
+  environment: 'development',
+  mongoUri: 'Configurado',
+  level: 'info',
+  message: 'Servidor iniciado correctamente',
+  timestamp: '2025-08-04 02:58:32'
+}
