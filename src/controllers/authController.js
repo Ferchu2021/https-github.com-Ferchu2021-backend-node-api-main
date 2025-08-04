@@ -1,178 +1,167 @@
-const Usuario = require("../models/usuario");
-const jwt = require("jsonwebtoken");
+const Usuario = require('../models/usuario');
+const jwt = require('jsonwebtoken');
 
-// LOGIN
-exports.login = async (req, res) => {
+// Login de usuario
+const login = async (req, res) => {
   try {
     const { email, password } = req.body;
-
+    
     // Buscar usuario por email
-    const usuario = await Usuario.findByEmail(email);
+    const usuario = await Usuario.findOne({ email });
     if (!usuario) {
-      return res.status(401).json({ 
-        error: "Credenciales inválidas" 
+      res.status(401).json({ 
+        success: false,
+        mensaje: 'Credenciales inválidas' 
       });
+      return;
     }
-
-    // Verificar si el usuario está activo
-    if (!usuario.estado) {
-      return res.status(401).json({ 
-        error: "Cuenta deshabilitada" 
+    
+    // Verificar contraseña
+    const contrasenaValida = await usuario.comparePassword(password);
+    if (!contrasenaValida) {
+      res.status(401).json({ 
+        success: false,
+        mensaje: 'Credenciales inválidas' 
       });
+      return;
     }
-
-    // Comparar contraseñas
-    const passwordValida = await usuario.comparePassword(password);
-    if (!passwordValida) {
-      return res.status(401).json({ 
-        error: "Credenciales inválidas" 
-      });
-    }
-
-    // Generar token JWT
+    
+    // Generar JWT
     const token = jwt.sign(
       { 
-        id: usuario._id, 
-        email: usuario.email, 
-        rol: usuario.rol 
+        userId: usuario._id, 
+        email: usuario.email 
       },
       process.env.JWT_SECRET,
-      { expiresIn: "24h" }
+      { expiresIn: '24h' }
     );
-
-    // Enviar respuesta sin contraseña
-    const usuarioPublico = usuario.toPublicJSON();
     
-    res.json({
-      mensaje: "Login exitoso",
+    res.status(200).json({
+      success: true,
+      mensaje: 'Login exitoso',
       token,
-      usuario: usuarioPublico
+      usuario: {
+        _id: usuario._id,
+        nombre: usuario.nombre,
+        email: usuario.email,
+        productos: usuario.productos,
+        activo: usuario.activo
+      }
     });
-
+    
   } catch (error) {
     console.error('Error en login:', error);
     res.status(500).json({ 
-      error: "Error interno del servidor" 
+      success: false,
+      mensaje: 'Error en el servidor', 
+      error: error.message
     });
   }
 };
 
-// REGISTER
-exports.register = async (req, res) => {
+// Registro de usuario
+const register = async (req, res) => {
   try {
-    const { nombre, email, password, rol } = req.body;
-
-    // Verificar si el usuario ya existe
-    const usuarioExistente = await Usuario.findByEmail(email);
+    const { nombre, email, password, productos } = req.body;
+    
+    // Verificar si el email ya existe
+    const usuarioExistente = await Usuario.findOne({ email });
     if (usuarioExistente) {
-      return res.status(409).json({ 
-        error: "El email ya está registrado" 
+      res.status(409).json({ 
+        success: false,
+        mensaje: 'El email ya está registrado' 
       });
+      return;
     }
-
+    
     // Crear nuevo usuario
-    const nuevoUsuario = new Usuario({
-      nombre,
-      email,
-      password,
-      rol: rol || 'usuario' // Por defecto es usuario
+    const nuevoUsuario = new Usuario({ 
+      nombre, 
+      email, 
+      contrasena: password, 
+      productos: productos || '',
+      activo: true
     });
-
+    
     await nuevoUsuario.save();
-
-    // Generar token JWT
+    
+    // Generar JWT
     const token = jwt.sign(
       { 
-        id: nuevoUsuario._id, 
-        email: nuevoUsuario.email, 
-        rol: nuevoUsuario.rol 
+        userId: nuevoUsuario._id, 
+        email: nuevoUsuario.email 
       },
       process.env.JWT_SECRET,
-      { expiresIn: "24h" }
+      { expiresIn: '24h' }
     );
-
-    // Enviar respuesta sin contraseña
-    const usuarioPublico = nuevoUsuario.toPublicJSON();
-
+    
     res.status(201).json({
-      mensaje: "Usuario registrado exitosamente",
+      success: true,
+      mensaje: 'Usuario registrado exitosamente',
       token,
-      usuario: usuarioPublico
+      usuario: {
+        _id: nuevoUsuario._id,
+        nombre: nuevoUsuario.nombre,
+        email: nuevoUsuario.email,
+        productos: nuevoUsuario.productos,
+        activo: nuevoUsuario.activo
+      }
     });
-
+    
   } catch (error) {
     console.error('Error en registro:', error);
-    
-    // Manejar errores de validación de MongoDB
-    if (error.code === 11000) {
-      return res.status(409).json({ 
-        error: "El email ya está registrado" 
-      });
-    }
-    
-    res.status(500).json({ 
-      error: "Error interno del servidor" 
+    res.status(400).json({ 
+      success: false,
+      mensaje: 'Error al registrar usuario', 
+      error: error.message
     });
   }
 };
 
-// VERIFY TOKEN
-exports.verifyToken = async (req, res) => {
+// Verificar token
+const verifyToken = async (req, res) => {
   try {
-    // El middleware de autenticación ya verificó el token
-    // Solo necesitamos devolver la información del usuario
-    const usuario = await Usuario.findById(req.user.id).select('-password');
-    
-    if (!usuario) {
-      return res.status(404).json({ 
-        error: "Usuario no encontrado" 
-      });
-    }
-
-    res.json({
-      mensaje: "Token válido",
-      usuario
+    res.status(200).json({
+      success: true,
+      mensaje: 'Token válido',
+      user: req.user
     });
-
   } catch (error) {
-    console.error('Error verificando token:', error);
-    res.status(500).json({ 
-      error: "Error interno del servidor" 
+    res.status(401).json({
+      success: false,
+      mensaje: 'Token inválido'
     });
   }
 };
 
-// REFRESH TOKEN
-exports.refreshToken = async (req, res) => {
+// Refresh token
+const refreshToken = async (req, res) => {
   try {
-    // Verificar que el usuario existe
-    const usuario = await Usuario.findById(req.user.id);
-    if (!usuario || !usuario.estado) {
-      return res.status(401).json({ 
-        error: "Usuario no válido" 
-      });
-    }
-
-    // Generar nuevo token
-    const newToken = jwt.sign(
+    const token = jwt.sign(
       { 
-        id: usuario._id, 
-        email: usuario.email, 
-        rol: usuario.rol 
+        userId: req.user.userId, 
+        email: req.user.email 
       },
       process.env.JWT_SECRET,
-      { expiresIn: "24h" }
+      { expiresIn: '24h' }
     );
-
-    res.json({
-      mensaje: "Token renovado",
-      token: newToken
+    
+    res.status(200).json({
+      success: true,
+      mensaje: 'Token renovado',
+      token
     });
-
   } catch (error) {
-    console.error('Error renovando token:', error);
-    res.status(500).json({ 
-      error: "Error interno del servidor" 
+    res.status(500).json({
+      success: false,
+      mensaje: 'Error al renovar token'
     });
   }
+};
+
+module.exports = {
+  login,
+  register,
+  verifyToken,
+  refreshToken
 };

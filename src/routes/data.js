@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const dataController = require("../controllers/dataController");
-const { authMiddleware } = require("../middleware/authMiddleware");
+const authMiddleware = require("../middleware/authMiddleware");
 
 router.get("/", dataController.getPublic);
 router.get("/private", authMiddleware, dataController.getPrivate);

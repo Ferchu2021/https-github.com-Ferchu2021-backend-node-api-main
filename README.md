@@ -1,185 +1,241 @@
-# Backend Node.js API - Examen Final
+# 🖥️ TechStore - Frontend
 
-## 📋 Descripción
-Backend API REST desarrollado para el examen final con las siguientes tecnologías:
-- **Node.js** + **Express.js**
-- **MongoDB** + **Mongoose**
-- **Firebase** (Auth + Firestore)
-- **JWT** para autenticación
-- **Vercel** para deploy
+Frontend para empresa de equipos de informática desarrollado con React + Vite.
 
-## 🚀 Funcionalidades Implementadas
+## 📋 Características
 
-### ✅ Requerimientos Cumplidos:
-- ✅ **API REST** con arquitectura correcta
-- ✅ **Base de datos** MongoDB hosteada en la nube
-- ✅ **Autenticación JWT** implementada
-- ✅ **CRUD completo** de usuarios
-- ✅ **Rutas públicas y privadas**
-- ✅ **Validaciones** de datos
-- ✅ **Integración Firebase** (Auth + Firestore)
-- ✅ **Baja lógica** implementada
-- ✅ **Código prolijo** y bien estructurado
+### ✅ Funcionalidades Implementadas
+- **Página de Inicio Pública**: Muestra información de la empresa y productos destacados
+- **Sistema de Login**: Autenticación con JWT y validaciones
+- **Dashboard Privado**: Panel de control con estadísticas y acciones rápidas
+- **Gestión de Productos**: CRUD completo con modales y confirmaciones
+- **Rutas Protegidas**: Navegación segura con autenticación
+- **Diseño Responsive**: Adaptable a diferentes dispositivos
+- **Validaciones de Formularios**: Usando React Hook Form + Joi
+- **Interfaz Moderna**: Diseño atractivo con gradientes y animaciones
 
-## 🔧 Instalación
+### 🎨 Diseño y UX
+- **Tema**: Empresa de equipos de informática (TechStore)
+- **Colores**: Gradientes azul-púrpura (#667eea → #764ba2)
+- **Iconos**: Emojis para mejor experiencia visual
+- **Animaciones**: Transiciones suaves y efectos hover
+- **Modales**: Para formularios y confirmaciones
 
+## 🚀 Instalación y Uso
+
+### Prerrequisitos
+- Node.js (versión 16 o superior)
+- Backend funcionando en `http://localhost:3001`
+
+### Instalación
 ```bash
-# Clonar repositorio
-git clone <tu-repositorio>
+# Clonar el repositorio
+git clone <url-del-repositorio>
+cd frontend-mcga
 
 # Instalar dependencias
 npm install
 
-# Configurar variables de entorno
-cp .env.example .env
-# Editar .env con tus credenciales
-
-# Ejecutar en desarrollo
+# Iniciar servidor de desarrollo
 npm run dev
+```
 
-# Ejecutar en producción
-npm start
+### Scripts Disponibles
+```bash
+npm run dev      # Iniciar servidor de desarrollo
+npm run build    # Construir para producción
+npm run preview  # Vista previa de la build
+npm run lint     # Ejecutar ESLint
 ```
 
 ## 📁 Estructura del Proyecto
 
 ```
 src/
-├── app.js                 # Aplicación principal
-├── config/
-│   └── firebase.js        # Configuración Firebase
-├── controllers/
-│   └── usuarioController.js # Controlador de usuarios
-├── middleware/
-│   └── authMiddleware.js   # Middleware de autenticación
-├── models/
-│   └── usuario.js         # Modelo de usuario
-└── routes/
-    └── usuarioRoutes.js   # Rutas de usuarios
+├── components/
+│   └── Navbar.jsx          # Barra de navegación
+├── pages/
+│   ├── Home.jsx            # Página de inicio pública
+│   ├── Login.jsx           # Página de login
+│   ├── Dashboard.jsx       # Dashboard privado
+│   └── Productos.jsx       # Gestión de productos
+├── App.jsx                 # Componente principal
+├── App.css                 # Estilos globales
+└── main.jsx               # Punto de entrada
 ```
-
-## 🔌 Endpoints API
-
-### Rutas Públicas
-- `GET /api/usuarios` - Listar usuarios (público)
-- `POST /api/usuarios/login` - Login de usuario
-
-### Rutas Privadas (requieren JWT)
-- `POST /api/usuarios` - Crear usuario
-- `GET /api/usuarios/:id` - Obtener usuario por ID
-- `PUT /api/usuarios/:id` - Actualizar usuario
-- `DELETE /api/usuarios/:id` - Eliminar usuario (baja lógica)
 
 ## 🔐 Autenticación
 
-### Login
-```bash
-POST /api/usuarios/login
-Content-Type: application/json
+### Credenciales de Prueba
+- **Email**: admin@techstore.com
+- **Contraseña**: admin123
 
-{
-  "email": "usuario@email.com",
-  "contrasena": "password123"
-}
-```
+### Flujo de Autenticación
+1. Usuario ingresa credenciales en `/login`
+2. Backend valida y retorna JWT
+3. Token se guarda en localStorage
+4. Usuario es redirigido al dashboard
+5. Rutas protegidas verifican autenticación
 
-### Respuesta
+## 📱 Páginas y Funcionalidades
+
+### 🏠 Página de Inicio (`/`)
+- **Público**: Accesible sin autenticación
+- **Contenido**: 
+  - Hero section con información de la empresa
+  - Estadísticas de clientes registrados
+  - Productos destacados
+  - Información sobre la empresa
+  - Call-to-action para login
+
+### 🔐 Página de Login (`/login`)
+- **Validaciones**:
+  - Email con formato válido
+  - Contraseña mínima 6 caracteres
+- **Funcionalidades**:
+  - Formulario con React Hook Form
+  - Validaciones en tiempo real
+  - Manejo de errores
+  - Loading states
+
+### 🎯 Dashboard (`/dashboard`)
+- **Privado**: Requiere autenticación
+- **Contenido**:
+  - Estadísticas de la empresa
+  - Acciones rápidas
+  - Productos recientes
+  - Información del usuario
+  - Enlaces a otras secciones
+
+### 🛒 Gestión de Productos (`/productos`)
+- **Privado**: Requiere autenticación
+- **Funcionalidades CRUD**:
+  - ✅ **Crear**: Modal con formulario validado
+  - ✅ **Leer**: Lista de productos con cards
+  - ✅ **Actualizar**: Modal de edición
+  - ✅ **Eliminar**: Modal de confirmación
+- **Campos del Producto**:
+  - Nombre (mínimo 3 caracteres)
+  - Precio (número positivo)
+  - Categoría (select con opciones)
+  - Stock (número entero no negativo)
+  - Descripción (mínimo 10 caracteres)
+
+## 🎨 Componentes
+
+### Navbar
+- Logo de la empresa
+- Navegación dinámica según autenticación
+- Información del usuario logueado
+- Botón de logout
+
+### Modales
+- **Crear/Editar Producto**: Formulario completo con validaciones
+- **Confirmar Eliminación**: Modal de seguridad
+
+### Cards de Productos
+- Imagen del producto
+- Información detallada
+- Badges de categoría y stock
+- Botones de acción (editar/eliminar)
+
+## 🔧 Tecnologías Utilizadas
+
+### Frontend
+- **React 19**: Biblioteca de UI
+- **Vite**: Build tool y servidor de desarrollo
+- **React Router DOM**: Navegación y rutas
+- **React Hook Form**: Manejo de formularios
+- **Joi**: Validaciones de esquemas
+- **Axios**: Cliente HTTP para API
+
+### Estilos
+- **CSS Puro**: Estilos personalizados
+- **Grid y Flexbox**: Layout responsive
+- **Gradientes**: Efectos visuales modernos
+- **Animaciones CSS**: Transiciones suaves
+
+## 🌐 API Endpoints
+
+El frontend se conecta con el backend en `http://localhost:3001`:
+
+- `GET /api/usuarios` - Obtener lista de usuarios (público)
+- `POST /api/usuarios/login` - Autenticación de usuarios
+
+## 📦 Dependencias
+
+### Producción
 ```json
 {
-  "success": true,
-  "mensaje": "Login exitoso",
-  "token": "jwt_token_aqui",
-  "usuario": {
-    "_id": "id_del_usuario",
-    "nombre": "Nombre Usuario",
-    "email": "usuario@email.com",
-    "productos": "Productos del usuario",
-    "activo": true
-  }
+  "react": "^19.1.0",
+  "react-dom": "^19.1.0",
+  "react-router-dom": "^6.x",
+  "axios": "^1.11.0",
+  "react-hook-form": "^7.x",
+  "joi": "^17.13.3",
+  "@hookform/resolvers": "^3.x"
 }
 ```
 
-### Usar Token
-```bash
-Authorization: Bearer <jwt_token>
+### Desarrollo
+```json
+{
+  "vite": "^7.0.4",
+  "@vitejs/plugin-react": "^4.6.0",
+  "eslint": "^9.30.1",
+  "@types/react": "^19.1.8"
+}
 ```
 
-## 🧪 Pruebas
+## 🚀 Deploy en Vercel
 
-```bash
-# Ejecutar pruebas completas
-npm run test-examen
+### Configuración
+1. Conectar repositorio a Vercel
+2. Configurar variables de entorno:
+   ```
+   VITE_API_URL=https://tu-backend.vercel.app
+   ```
+3. Build command: `npm run build`
+4. Output directory: `dist`
 
-# O ejecutar directamente
-node test_examen_final.js
+### Variables de Entorno
+```env
+VITE_API_URL=http://localhost:3001
 ```
 
-## 🌐 Deploy
+## 🧪 Testing
 
-### Vercel
-```bash
-# Instalar Vercel CLI
-npm i -g vercel
+### Pruebas Manuales
+1. **Navegación**: Verificar rutas públicas y privadas
+2. **Login**: Probar credenciales válidas e inválidas
+3. **CRUD Productos**: Crear, editar, eliminar productos
+4. **Responsive**: Verificar en diferentes dispositivos
 
-# Deploy
-vercel
+### Credenciales de Prueba
+- Email: `admin@techstore.com`
+- Contraseña: `admin123`
 
-# Variables de entorno en Vercel
-MONGO_URI=tu_mongo_uri
-JWT_SECRET=tu_jwt_secret
-FIREBASE_PROJECT_ID=tu_project_id
-FIREBASE_CLIENT_EMAIL=tu_client_email
-FIREBASE_PRIVATE_KEY=tu_private_key
-```
+## 📝 Notas de Desarrollo
 
-## 📊 Base de Datos
+### Características Destacadas
+- **Simplicidad**: Código limpio y fácil de entender
+- **UX/UI**: Interfaz moderna y atractiva
+- **Validaciones**: Formularios robustos con feedback
+- **Seguridad**: Rutas protegidas y manejo de tokens
+- **Responsive**: Adaptable a móviles y tablets
 
-### MongoDB Atlas
-- Base de datos hosteada en MongoDB Atlas
-- Colección: `usuarios`
-- Campos: `nombre`, `email`, `contrasena`, `productos`, `activo`, `createdAt`, `updatedAt`
+### Mejoras Futuras
+- [ ] Integración con backend real para productos
+- [ ] Filtros y búsqueda de productos
+- [ ] Paginación
+- [ ] Subida de imágenes
+- [ ] Notificaciones push
+- [ ] Tema oscuro
 
-### Firebase
-- Autenticación de usuarios
-- Firestore para datos adicionales
-- Sincronización con MongoDB
-
-## 🔒 Seguridad
-
-- ✅ **JWT** para autenticación
-- ✅ **Bcrypt** para hash de contraseñas
-- ✅ **Helmet** para headers de seguridad
-- ✅ **CORS** configurado
-- ✅ **Rate limiting** implementado
-- ✅ **Validaciones** de entrada
-
-## 📝 Scripts Disponibles
-
-```bash
-npm start          # Iniciar servidor
-npm run dev        # Modo desarrollo
-npm run test       # Ejecutar pruebas
-npm run test-examen # Pruebas del examen final
-```
-
-## 🎯 Criterios de Evaluación Cumplidos
-
-1. ✅ **Proyecto Backend** alojado en GitHub
-2. ✅ **Código prolijo** y segmentado en commits
-3. ✅ **Hosteado en la nube** (Vercel)
-4. ✅ **Base de datos** MongoDB en la nube
-5. ✅ **API REST** implementada correctamente
-6. ✅ **Autenticación JWT** funcionando
-7. ✅ **CRUD completo** de usuarios
-8. ✅ **Validaciones** implementadas
-9. ✅ **Integración Firebase** funcionando
-10. ✅ **Baja lógica** implementada
-
-## 🔗 URLs de Deploy
-
-- **Backend**: `https://tu-backend.vercel.app`
-- **Frontend**: `https://tu-frontend.vercel.app` (pendiente)
-
-## 📞 Contacto
+## 👨‍💻 Autor
 
 Desarrollado para el examen final de MCGA.
+
+## 📄 Licencia
+
+Este proyecto es para fines educativos.
