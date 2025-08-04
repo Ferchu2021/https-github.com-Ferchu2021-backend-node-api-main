@@ -1049,3 +1049,82 @@
   message: 'HTTP Request Error',
   timestamp: '2025-08-03 21:27:16'
 }
+{
+  message: 'Error conectando a MongoDB: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017',
+  reason: TopologyDescription {
+    type: 'Unknown',
+    servers: Map(1) {
+      'localhost:27017' => ServerDescription {
+        address: 'localhost:27017',
+        type: 'Unknown',
+        hosts: [],
+        passives: [],
+        arbiters: [],
+        tags: {},
+        minWireVersion: 0,
+        maxWireVersion: 0,
+        roundTripTime: -1,
+        lastUpdateTime: 786475081,
+        lastWriteDate: 0,
+        error: MongoNetworkError: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+            at connectionFailureError (C:\Users\Administrator\Desktop\MCGA\https-github.com-Ferchu2021-backend-node-api-main\https-github.com-Ferchu2021-backend-node-api-main\node_modules\mongodb\lib\cmap\connect.js:367:20)
+            at Socket.<anonymous> (C:\Users\Administrator\Desktop\MCGA\https-github.com-Ferchu2021-backend-node-api-main\https-github.com-Ferchu2021-backend-node-api-main\node_modules\mongodb\lib\cmap\connect.js:290:22)
+            at Object.onceWrapper (node:events:622:26)
+            at Socket.emit (node:events:507:28)
+            at emitErrorNT (node:internal/streams/destroy:170:8)
+            at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+            at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+          cause: AggregateError [ECONNREFUSED]: 
+              at internalConnectMultiple (node:net:1139:18)
+              at afterConnectMultiple (node:net:1712:7) {
+            code: 'ECONNREFUSED',
+            [errors]: [
+              Error: connect ECONNREFUSED ::1:27017
+                  at createConnectionError (node:net:1675:14)
+                  at afterConnectMultiple (node:net:1705:16) {
+                errno: -4078,
+                code: 'ECONNREFUSED',
+                syscall: 'connect',
+                address: '::1',
+                port: 27017
+              },
+              Error: connect ECONNREFUSED 127.0.0.1:27017
+                  at createConnectionError (node:net:1675:14)
+                  at afterConnectMultiple (node:net:1705:16) {
+                errno: -4078,
+                code: 'ECONNREFUSED',
+                syscall: 'connect',
+                address: '127.0.0.1',
+                port: 27017
+              }
+            ]
+          },
+          [Symbol(errorLabels)]: Set(1) { 'ResetPool' }
+        },
+        topologyVersion: null,
+        setName: null,
+        setVersion: null,
+        electionId: null,
+        logicalSessionTimeoutMinutes: null,
+        primary: null,
+        me: null,
+        '$clusterTime': null
+      }
+    },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined,
+  level: 'error',
+  stack: 'MongooseServerSelectionError: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017\n' +
+    '    at _handleConnectionErrors (C:\\Users\\Administrator\\Desktop\\MCGA\\https-github.com-Ferchu2021-backend-node-api-main\\https-github.com-Ferchu2021-backend-node-api-main\\node_modules\\mongoose\\lib\\connection.js:816:11)\n' +
+    '    at NativeConnection.openUri (C:\\Users\\Administrator\\Desktop\\MCGA\\https-github.com-Ferchu2021-backend-node-api-main\\https-github.com-Ferchu2021-backend-node-api-main\\node_modules\\mongoose\\lib\\connection.js:791:11)',
+  timestamp: '2025-08-04 14:38:06'
+}
