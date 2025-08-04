@@ -125,7 +125,9 @@ app.use((err, req, res, next) => {
 
 // Conexión a MongoDB y arranque del servidor
 console.log('Intentando conectar a MongoDB...');
-mongoose.connect(process.env.MONGO_URI, {
+console.log('MongoDB URI configurado:', process.env.MONGODB_URI ? 'Sí' : 'No');
+
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/backend-node-api', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 })
@@ -141,14 +143,23 @@ mongoose.connect(process.env.MONGO_URI, {
     logger.info('Servidor iniciado correctamente', {
       port,
       environment: process.env.NODE_ENV || 'development',
-      mongoUri: process.env.MONGO_URI ? 'Configurado' : 'No configurado'
+      mongoUri: process.env.MONGODB_URI ? 'Configurado' : 'No configurado'
     });
   });
 })
 .catch((err) => {
   console.error("❌ Error de conexión a MongoDB:", err.message);
   logger.error('Error conectando a MongoDB:', err);
-  process.exit(1);
+  
+  // En lugar de salir, continuar sin MongoDB
+  console.log('⚠️ Continuando sin MongoDB...');
+  
+  const port = process.env.PORT || 3001;
+  app.listen(port, () => {
+    console.log(`🚀 Servidor escuchando en puerto ${port} (sin MongoDB)`);
+    console.log(`📊 Modo: ${process.env.NODE_ENV || 'development'}`);
+    console.log(`🔗 URL: http://localhost:${port}`);
+  });
 });
 
 // Manejo de señales de terminación
