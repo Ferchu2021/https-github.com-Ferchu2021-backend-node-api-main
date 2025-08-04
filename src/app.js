@@ -31,27 +31,55 @@ app.use(helmet({
   },
 }));
 
-// CORS configurado
+// CORS configurado - Configuración más robusta para Vercel
 app.use(cors({
-  origin: ['https://frontend-techstore.vercel.app', 'http://localhost:5173'],
+  origin: function (origin, callback) {
+    const allowedOrigins = [
+      'https://frontend-techstore.vercel.app',
+      'http://localhost:5173',
+      'http://localhost:3000',
+      'http://localhost:3001'
+    ];
+    
+    // Permitir requests sin origin (como Postman)
+    if (!origin) return callback(null, true);
+    
+    if (allowedOrigins.indexOf(origin) !== -1) {
+      callback(null, true);
+    } else {
+      console.log('CORS blocked origin:', origin);
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS', 'PATCH'],
   allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With', 'Accept', 'Origin'],
-  optionsSuccessStatus: 200
+  optionsSuccessStatus: 200,
+  preflightContinue: false
 }));
 
-// Middleware CORS adicional para preflight requests
+// Middleware CORS adicional para preflight requests - Más específico
 app.use((req, res, next) => {
+  // Log para debugging
+  console.log('Request origin:', req.headers.origin);
+  console.log('Request method:', req.method);
+  console.log('Request path:', req.path);
+  
+  // Headers CORS
   res.header('Access-Control-Allow-Origin', 'https://frontend-techstore.vercel.app');
   res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS, PATCH');
   res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization, X-Requested-With, Accept, Origin');
   res.header('Access-Control-Allow-Credentials', 'true');
+  res.header('Access-Control-Max-Age', '86400'); // 24 horas
   
+  // Manejar preflight requests
   if (req.method === 'OPTIONS') {
-    res.sendStatus(200);
-  } else {
-    next();
+    console.log('Handling OPTIONS preflight request');
+    res.status(200).end();
+    return;
   }
+  
+  next();
 });
 
 // Middlewares de parsing
@@ -69,6 +97,17 @@ app.use(morgan('combined', {
 // Rate limiting
 app.use('/api/', generalLimiter);
 app.use('/api/auth', authLimiter);
+
+// Ruta específica para OPTIONS preflight
+app.options('*', (req, res) => {
+  console.log('Global OPTIONS handler called');
+  res.header('Access-Control-Allow-Origin', 'https://frontend-techstore.vercel.app');
+  res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS, PATCH');
+  res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization, X-Requested-With, Accept, Origin');
+  res.header('Access-Control-Allow-Credentials', 'true');
+  res.header('Access-Control-Max-Age', '86400');
+  res.status(200).end();
+});
 
 // Rutas
 app.use("/api/auth", authRoutes);
