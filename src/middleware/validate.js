@@ -97,6 +97,78 @@ const validatePagination = [
   handleValidationErrors
 ];
 
+// Validaciones para productos
+const validateProducto = [
+  body('nombre')
+    .trim()
+    .isLength({ min: 2, max: 100 })
+    .withMessage('El nombre debe tener entre 2 y 100 caracteres')
+    .matches(/^[a-zA-Z0-9áéíóúÁÉÍÓÚñÑ\s\-\.]+$/)
+    .withMessage('El nombre contiene caracteres no válidos'),
+  
+  body('precio')
+    .isFloat({ min: 0 })
+    .withMessage('El precio debe ser un número mayor o igual a 0'),
+  
+  body('descripcion')
+    .trim()
+    .isLength({ min: 10, max: 500 })
+    .withMessage('La descripción debe tener entre 10 y 500 caracteres'),
+  
+  body('categoria')
+    .isIn(['Laptops', 'Monitores', 'Teclados', 'Mouse', 'Auriculares', 'Otros'])
+    .withMessage('Categoría no válida'),
+  
+  body('stock')
+    .optional()
+    .isInt({ min: 0 })
+    .withMessage('El stock debe ser un número entero mayor o igual a 0'),
+  
+  body('imagen')
+    .optional()
+    .isURL()
+    .withMessage('La imagen debe ser una URL válida'),
+  
+  handleValidationErrors
+];
+
+// Validaciones para actualización de producto
+const validateProductoUpdate = [
+  body('nombre')
+    .optional()
+    .trim()
+    .isLength({ min: 2, max: 100 })
+    .withMessage('El nombre debe tener entre 2 y 100 caracteres'),
+  
+  body('precio')
+    .optional()
+    .isFloat({ min: 0 })
+    .withMessage('El precio debe ser un número mayor o igual a 0'),
+  
+  body('descripcion')
+    .optional()
+    .trim()
+    .isLength({ min: 10, max: 500 })
+    .withMessage('La descripción debe tener entre 10 y 500 caracteres'),
+  
+  body('categoria')
+    .optional()
+    .isIn(['Laptops', 'Monitores', 'Teclados', 'Mouse', 'Auriculares', 'Otros'])
+    .withMessage('Categoría no válida'),
+  
+  body('stock')
+    .optional()
+    .isInt({ min: 0 })
+    .withMessage('El stock debe ser un número entero mayor o igual a 0'),
+  
+  body('imagen')
+    .optional()
+    .isURL()
+    .withMessage('La imagen debe ser una URL válida'),
+  
+  handleValidationErrors
+];
+
 // Validaciones para búsqueda
 const validateSearch = [
   query('search')
@@ -139,5 +211,7 @@ module.exports = {
   validatePagination,
   validateSearch,
   validateLogin,
-  handleValidationErrors
+  handleValidationErrors,
+  validateProducto,
+  validateProductoUpdate
 };

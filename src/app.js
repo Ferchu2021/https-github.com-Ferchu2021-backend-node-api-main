@@ -31,50 +31,27 @@ app.use(helmet({
   },
 }));
 
-// CORS configurado - Configuración robusta para Vercel
+// CORS configurado - Configuración robusta para desarrollo y producción
 app.use(cors({
-  origin: function (origin, callback) {
-    // Permitir requests sin origin (como Postman)
-    if (!origin) return callback(null, true);
-    
-    const allowedOrigins = [
-      'https://frontend-techstore.vercel.app',
-      'http://localhost:5173',
-      'http://localhost:3000',
-      'http://localhost:3001'
-    ];
-    
-    if (allowedOrigins.includes(origin)) {
-      callback(null, true);
-    } else {
-      console.log('CORS blocked origin:', origin);
-      callback(null, false);
-    }
-  },
+  origin: [
+    'https://frontend-techstore.vercel.app',
+    'http://localhost:5173',
+    'http://localhost:5174',
+    'http://localhost:5175',
+    'http://localhost:3000',
+    'http://localhost:3001'
+  ],
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS', 'PATCH'],
   allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With', 'Accept', 'Origin'],
-  optionsSuccessStatus: 200
+  optionsSuccessStatus: 200,
+  preflightContinue: false
 }));
 
-// Middleware adicional para CORS en Vercel
+// Middleware adicional para logging y debugging de CORS
 app.use((req, res, next) => {
   // Log para debugging
   console.log(`${req.method} ${req.path} - Origin: ${req.headers.origin}`);
-  
-  // Headers CORS adicionales
-  res.header('Access-Control-Allow-Origin', 'https://frontend-techstore.vercel.app');
-  res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS, PATCH');
-  res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization, X-Requested-With, Accept, Origin');
-  res.header('Access-Control-Allow-Credentials', 'true');
-  
-  // Manejar preflight requests
-  if (req.method === 'OPTIONS') {
-    console.log('Handling OPTIONS preflight request for:', req.path);
-    res.status(200).end();
-    return;
-  }
-  
   next();
 });
 
