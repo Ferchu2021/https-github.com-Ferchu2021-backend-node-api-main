@@ -15,7 +15,7 @@ const authRoutes = require("./routes/auth");
 const dataRoutes = require("./routes/data");
 const usuariosRoutes = require('./routes/usuarioRoutes');
 const firebaseRoutes = require('./routes/firebase');
-const productosRoutes = require('./routes/productos');
+const productosRoutes = require('./routes/producto');
 
 const app = express();
 
