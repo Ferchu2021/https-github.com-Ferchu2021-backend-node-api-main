@@ -3851,3 +3851,43 @@
   level: 'info',
   timestamp: '2025-08-04 19:31:39'
 }
+{
+  port: 3001,
+  environment: 'development',
+  mongoUri: 'Configurado',
+  level: 'info',
+  message: 'Servidor iniciado correctamente',
+  timestamp: '2025-08-04 23:33:26'
+}
+{
+  method: 'GET',
+  url: '/',
+  status: 200,
+  duration: '17ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-04 23:34:48'
+}
+{
+  message: '::1 - - [05/Aug/2025:02:34:48 +0000] "GET /api/producto/ HTTP/1.1" 200 384 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-04 23:34:48'
+}
+{
+  method: 'POST',
+  url: '/',
+  status: 201,
+  duration: '3ms',
+  ip: '::1',
+  userAgent: 'axios/1.11.0',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-04 23:34:48'
+}
+{
+  message: '::1 - - [05/Aug/2025:02:34:48 +0000] "POST /api/producto/ HTTP/1.1" 201 193 "-" "axios/1.11.0"',
+  level: 'info',
+  timestamp: '2025-08-04 23:34:48'
+}
