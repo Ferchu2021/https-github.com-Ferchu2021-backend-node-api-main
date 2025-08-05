@@ -1,10 +1,9 @@
 // Configurar variables de entorno para Vercel
 require('dotenv').config();
 
-// Exportar la aplicación principal con MongoDB
+// Exportar la aplicación principal
 const express = require('express');
 const cors = require('cors');
-const mongoose = require('mongoose');
 
 const app = express();
 
@@ -24,38 +23,13 @@ app.use(cors({
 app.use(express.json({ limit: '10mb' }));
 app.use(express.urlencoded({ extended: true, limit: '10mb' }));
 
-// Conectar a MongoDB
-const connectDB = async () => {
-  try {
-    console.log('🔌 Conectando a MongoDB...');
-    console.log('MongoDB URI:', process.env.MONGO_URI ? 'Configurado' : 'No configurado');
-    
-    if (!process.env.MONGO_URI) {
-      throw new Error('MONGO_URI no está configurado');
-    }
-    
-    await mongoose.connect(process.env.MONGO_URI, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    });
-    
-    console.log('✅ MongoDB conectado exitosamente');
-  } catch (error) {
-    console.error('❌ Error conectando a MongoDB:', error.message);
-    throw error;
-  }
-};
-
-// Inicializar conexión a MongoDB
-connectDB().catch(console.error);
-
 // Ruta de prueba
 app.get('/', (req, res) => {
   res.json({
-    mensaje: 'API backend funcionando en Vercel con MongoDB',
-    version: '3.0.0',
+    mensaje: 'API backend funcionando en Vercel',
+    version: '4.0.0',
     timestamp: new Date().toISOString(),
-    mongoStatus: mongoose.connection.readyState === 1 ? 'Conectado' : 'Desconectado'
+    status: 'OK'
   });
 });
 
@@ -64,16 +38,6 @@ app.get('/api/producto', async (req, res) => {
   try {
     console.log('GET /api/producto - Endpoint llamado');
     
-    // Verificar conexión a MongoDB
-    if (mongoose.connection.readyState !== 1) {
-      return res.status(500).json({
-        success: false,
-        mensaje: 'Base de datos no conectada',
-        timestamp: new Date().toISOString()
-      });
-    }
-    
-    // Por ahora, retornar datos de prueba
     res.status(200).json({
       success: true,
       mensaje: 'Lista de productos obtenida exitosamente',
