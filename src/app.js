@@ -169,17 +169,36 @@ app.use((err, req, res, next) => {
   res.status(500).json(errorResponse);
 });
 
-// Conexión a MongoDB y arranque del servidor
-console.log('Intentando conectar a MongoDB...');
-console.log('MongoDB URI configurado:', process.env.MONGO_URI ? 'Sí' : 'No');
+// Conexión a MongoDB solo en desarrollo local
+if (process.env.NODE_ENV !== 'production' || process.env.ENABLE_MONGODB === 'true') {
+  console.log('Intentando conectar a MongoDB...');
+  console.log('MongoDB URI configurado:', process.env.MONGO_URI ? 'Sí' : 'No');
 
-mongoose.connect(process.env.MONGO_URI, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-})
-.then(() => {
-  console.log('✅ Conexión exitosa a MongoDB');
-  
+  mongoose.connect(process.env.MONGO_URI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
+  .then(() => {
+    console.log('✅ Conexión exitosa a MongoDB');
+  })
+  .catch((err) => {
+    console.error("❌ Error de conexión a MongoDB:", err.message);
+    logger.error('Error conectando a MongoDB:', err);
+    
+    // En producción (Vercel), no salir del proceso
+    if (process.env.NODE_ENV === 'production') {
+      console.log('⚠️ Continuando sin MongoDB en producción');
+    } else {
+      console.error("❌ Error crítico: No se puede conectar a MongoDB");
+      process.exit(1);
+    }
+  });
+} else {
+  console.log('⚠️ MongoDB deshabilitado en producción (Vercel)');
+}
+
+// Iniciar servidor solo en desarrollo local
+if (process.env.NODE_ENV !== 'production') {
   const port = process.env.PORT || 3001;
   app.listen(port, () => {
     console.log(`🚀 Servidor escuchando en puerto ${port}`);
@@ -192,15 +211,7 @@ mongoose.connect(process.env.MONGO_URI, {
       mongoUri: process.env.MONGO_URI ? 'Configurado' : 'No configurado'
     });
   });
-})
-.catch((err) => {
-  console.error("❌ Error de conexión a MongoDB:", err.message);
-  logger.error('Error conectando a MongoDB:', err);
-  
-  // Error crítico - salir si no se puede conectar a MongoDB
-  console.error("❌ Error crítico: No se puede conectar a MongoDB");
-  process.exit(1);
-});
+}
 
 // Manejo de señales de terminación
 process.on('SIGTERM', () => {

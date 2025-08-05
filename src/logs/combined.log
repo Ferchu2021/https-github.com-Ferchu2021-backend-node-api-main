@@ -3891,3 +3891,83 @@
   level: 'info',
   timestamp: '2025-08-04 23:34:48'
 }
+{
+  method: 'GET',
+  url: '/',
+  status: 200,
+  duration: '5ms',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-04 23:47:04'
+}
+{
+  message: '::1 - - [05/Aug/2025:02:47:04 +0000] "GET /api/producto/ HTTP/1.1" 200 384 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"',
+  level: 'info',
+  timestamp: '2025-08-04 23:47:04'
+}
+{
+  method: 'GET',
+  url: '/',
+  status: 200,
+  duration: '2ms',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-04 23:48:10'
+}
+{
+  message: '::1 - - [05/Aug/2025:02:48:10 +0000] "GET /api/producto/ HTTP/1.1" 200 384 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"',
+  level: 'info',
+  timestamp: '2025-08-04 23:48:10'
+}
+{
+  method: 'GET',
+  url: '/',
+  status: 200,
+  duration: '5ms',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-04 23:48:18'
+}
+{
+  message: '::1 - - [05/Aug/2025:02:48:18 +0000] "GET /api/producto/ HTTP/1.1" 200 384 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"',
+  level: 'info',
+  timestamp: '2025-08-04 23:48:18'
+}
+{
+  method: 'GET',
+  url: '/',
+  status: 200,
+  duration: '5ms',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-04 23:48:24'
+}
+{
+  message: '::1 - - [05/Aug/2025:02:48:24 +0000] "GET /api/producto/ HTTP/1.1" 200 384 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"',
+  level: 'info',
+  timestamp: '2025-08-04 23:48:24'
+}
+{
+  method: 'GET',
+  url: '/',
+  status: 200,
+  duration: '2ms',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36',
+  level: 'info',
+  message: 'HTTP Request',
+  timestamp: '2025-08-04 23:48:34'
+}
+{
+  message: '::1 - - [05/Aug/2025:02:48:34 +0000] "GET /api/producto/ HTTP/1.1" 200 384 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"',
+  level: 'info',
+  timestamp: '2025-08-04 23:48:34'
+}
